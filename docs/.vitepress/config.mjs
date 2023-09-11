@@ -11,7 +11,7 @@ export default defineConfig({
   // 		atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
   // 	]
   // },
-  // base: '/all-in-class/',
+  base: '/atom-css-doc/',
   title: "@meizhou/atomcss",
   description: "uniapp的css原子化引擎",
   themeConfig: {
