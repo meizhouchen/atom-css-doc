@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "vitepress": "1.0.0-rc.12"
+  },
+  "dependencies": {
+    "@meizhou/atomcss": "^0.0.3"
   }
 }

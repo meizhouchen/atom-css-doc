@@ -50,18 +50,30 @@ export default defineConfig({
               text: 'uniapp',
               link: '/guide/install/uniapp'
             },
-            {
-              text: 'vite',
-              link: '/guide/install/vite'
+            // {
+            //   text: 'vite',
+            //   link: '/guide/install/vite'
+            // },
+            // {
+            //   text: 'webpack',
+            //   link: '/guide/install/webpack'
+            // },
+            // {
+            //   text: 'vitepress',
+            //   link: '/guide/install/vitepress'
+            // }
+          ]
+        },
+        {
+          text: 'ide 插件',
+          items: [{
+              text: 'HBuilderX',
+              link: '/guide/ide/HBuilderX'
             },
             {
-              text: 'webpack',
-              link: '/guide/install/webpack'
+              text: 'VSCode',
+              link: '/guide/ide/VSCode'
             },
-            {
-              text: 'vitepress',
-              link: '/guide/install/vitepress'
-            }
           ]
         },
         {

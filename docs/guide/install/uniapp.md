@@ -13,12 +13,12 @@ pnpm i -D @meizhou/atomcss
 ::: code-group
 ```js [vue2]
 // vue.config.js
-const { allin } = require('@meizhou/atomcss')
+const { atomcss } = require('@meizhou/atomcss')
 
 module.exports = {
   configureWebpack: {
     plugins: [
-      allin()
+      atomcss()
     ]
   }
 }
@@ -28,12 +28,12 @@ module.exports = {
 // vite.config.js
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni';
-import { allin } from "@meizhou/atomcss";
+import { atomcss } from "@meizhou/atomcss";
 
 export default defineConfig({
   plugins: [
     uni(),
-    allin()
+    atomcss()
   ]
 })
 ```
