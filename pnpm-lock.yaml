@@ -1,11 +1,13 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@meizhou/atomcss': ^0.0.3
+  '@all/monorepo': link:D:/private-project/atom-css
+  '@meizhou/atomcss': link:D:/private-project/atom-css/packages/css-allin-class
   vitepress: 1.0.0-rc.12
 
 dependencies:
-  '@meizhou/atomcss': registry.npmmirror.com/@meizhou/atomcss/0.0.3
+  '@all/monorepo': link:../../atom-css
+  '@meizhou/atomcss': registry.npmmirror.com/@meizhou/atomcss/0.0.4
 
 devDependencies:
   vitepress: registry.npmmirror.com/vitepress/1.0.0-rc.12
@@ -642,10 +644,10 @@ packages:
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec/1.4.15
     dev: false
 
-  registry.npmmirror.com/@meizhou/atomcss/0.0.3:
-    resolution: {integrity: sha512-JtqAI5rUYkbpGZ6t5LY1nwemdLK59x/ZlGcWud3BF+5TWj00Ku5qbQGzSSDYUz/kiu3EnHeO+o+MiAM+jfrLRg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@meizhou/atomcss/-/atomcss-0.0.3.tgz}
+  registry.npmmirror.com/@meizhou/atomcss/0.0.4:
+    resolution: {integrity: sha512-I0or1OaR6W4sG0SHuw3zN11DdBaGgihNIJU1o+OUsu7q2MU4X9vmO+OZ++BZSnnTc/egr4HB+mlaOLyYmBHM9w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@meizhou/atomcss/-/atomcss-0.0.4.tgz}
     name: '@meizhou/atomcss'
-    version: 0.0.3
+    version: 0.0.4
     dependencies:
       '@babel/generator': registry.npmmirror.com/@babel/generator/7.22.15
       '@babel/parser': registry.npmmirror.com/@babel/parser/7.22.16

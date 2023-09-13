@@ -18,6 +18,7 @@
     "vitepress": "1.0.0-rc.12"
   },
   "dependencies": {
-    "@meizhou/atomcss": "^0.0.3"
+    "@all/monorepo": "link:D:/private-project/atom-css",
+    "@meizhou/atomcss": "link:D:/private-project/atom-css/packages/css-allin-class"
   }
 }
