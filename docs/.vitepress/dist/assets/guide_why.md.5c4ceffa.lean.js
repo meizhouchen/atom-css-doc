@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as i,Q as t}from"./chunks/framework.2127afa9.js";const x=JSON.parse('{"title":"为什么是？","description":"","frontmatter":{},"headers":[],"relativePath":"guide/why.md","filePath":"guide/why.md"}'),o={name:"guide/why.md"},r=t("",9),l=[r];function n(d,p,s,h,c,_){return e(),i("div",null,l)}const m=a(o,[["render",n]]);export{x as __pageData,m as default};

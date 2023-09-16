@@ -1,5 +1,5 @@
 # 安装
-## 1.安装
+## 第一步、安装@meizhou/atomcss
 ::: code-group
 ```bash [npm]
 npm i -D @meizhou/atomcss
@@ -9,7 +9,7 @@ npm i -D @meizhou/atomcss
 pnpm i -D @meizhou/atomcss
 ```
 :::
-## 2.修改 vue 配置文件
+## 第二步、修改 vue 配置文件
 ::: code-group
 ```js [vue2]
 // vue.config.js
@@ -38,7 +38,7 @@ export default defineConfig({
 })
 ```
 :::
-## 2.增加 atomcss 配置文件
+## 第三步、增加 atomcss 配置文件
 ```js
 // atomcss.config.js
 import { defineConfig } from '@meizhou/atomcss'
@@ -49,3 +49,5 @@ export default defineConfig({
     presets: [preset()], //预设
 })
 ```
+## 项目结构示例
+![目录结构](uniapp_files/1.jpg)

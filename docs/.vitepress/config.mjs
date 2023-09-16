@@ -7,9 +7,9 @@ import { preset } from "@meizhou/atomcss/preset";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
-  	plugins: [
-  		atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
-  	]
+    plugins: [
+      atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
+    ]
   },
   base: '/atom-css-doc/',
   title: "@meizhou/atomcss",
@@ -78,59 +78,81 @@ export default defineConfig({
         },
         {
           text: '预设样式',
-          items: [
-            {
+          items: [{
               text: '布局',
               items: [
-                {
-                  text: 'flex',
-                  link: '/guide/preset/flex'
-                },
+
                 {
                   text: 'display',
-                  link: '/guide/preset/display'
+                  link: '/guide/preset/layout/display'
                 },
                 {
                   text: '上下左右',
-                  link: '/guide/preset/top'
+                  link: '/guide/preset/layout/top'
                 },
                 {
                   text: 'zIndex',
-                  link: '/guide/preset/zIndex'
+                  link: '/guide/preset/layout/zIndex'
                 },
               ]
             },
             {
               text: 'flex',
-              items: [
-                {
+              items: [{
                   text: 'flex',
-                  link: '/guide/preset/flex'
+                  link: '/guide/preset/flex/flex'
+                },
+                {
+                  text: 'flex-basis',
+                  link: '/guide/preset/flex/flex-basis'
+                },
+                {
+                  text: 'flex-direction',
+                  link: '/guide/preset/flex/flex-direction'
+                },
+                {
+                  text: 'flex-grow',
+                  link: '/guide/preset/flex/flex-grow'
+                },
+                {
+                  text: 'flex-shrink',
+                  link: '/guide/preset/flex/flex-shrink'
+                },
+                {
+                  text: 'flex-wrap',
+                  link: '/guide/preset/flex/flex-wrap'
+                },
+                {
+                  text: 'justify-content',
+                  link: '/guide/preset/flex/justify-content'
+                },
+                {
+                  text: 'justify-items',
+                  link: '/guide/preset/flex/justify-items'
+                },
+                {
+                  text: 'justify-self',
+                  link: '/guide/preset/flex/justify-self'
                 },
               ]
             },
             {
               text: '间隔',
-              items: [
-                {
-                  text: 'm、p边距',
-                  link: '/guide/preset/marginPadding'
-                },
-              ]
+              items: [{
+                text: 'm、p边距',
+                link: '/guide/preset/marginPadding'
+              }, ]
             },
             {
               text: '宽高',
-              items: [
-                {
-                  text: '宽高',
-                  link: '/guide/preset/widthHeight'
-                },
-              ]
+              items: [{
+                text: '宽高',
+                link: '/guide/preset/widthHeight'
+              }, ]
             },
             {
               text: '文字排版',
-              items: [
-                {
+              items: [{
                   text: 'color颜色',
                   link: '/guide/preset/color'
                 },
@@ -150,30 +172,24 @@ export default defineConfig({
             },
             {
               text: '背景',
-              items: [
-                {
-                  text: '背景',
-                  link: '/guide/preset/bg'
-                },
-              ]
+              items: [{
+                text: '背景',
+                link: '/guide/preset/bg'
+              }, ]
             },
             {
               text: '边框',
-              items: [
-                {
-                  text: 'border边框',
-                  link: '/guide/preset/border'
-                },
-              ]
+              items: [{
+                text: 'border边框',
+                link: '/guide/preset/border'
+              }, ]
             },
-           {
+            {
               text: 'Transforms',
-              items: [
-                {
-                  text: 'translate变换',
-                  link: '/guide/preset/translate'
-                },
-              ]
+              items: [{
+                text: 'translate变换',
+                link: '/guide/preset/translate'
+              }, ]
             },
             {
               text: 'shadow阴影',
