@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@all/monorepo": "link:D:/private-project/atom-css",
-    "@meizhou/atomcss": "link:D:/private-project/atom-css/packages/css-allin-class"
+    "@meizhou/atomcss": "link:E:/project/atom-css/packages/css-allin-class"
   }
 }

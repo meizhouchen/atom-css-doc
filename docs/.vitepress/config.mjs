@@ -1,16 +1,16 @@
 import {
   defineConfig
 } from 'vitepress'
-// import { atomcss } from '@meizhou/atomcss'
-// import { preset } from "@meizhou/atomcss/preset";
+import { atomcss } from '@meizhou/atomcss'
+import { preset } from "@meizhou/atomcss/preset";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // vite: {
-  // 	plugins: [
-  // 		atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
-  // 	]
-  // },
+  vite: {
+  	plugins: [
+  		atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
+  	]
+  },
   base: '/atom-css-doc/',
   title: "@meizhou/atomcss",
   description: "uniapp的css原子化引擎",
@@ -78,62 +78,113 @@ export default defineConfig({
         },
         {
           text: '预设样式',
-          items: [{
-              text: 'line省略',
-              link: '/guide/preset/line'
+          items: [
+            {
+              text: '布局',
+              items: [
+                {
+                  text: 'flex',
+                  link: '/guide/preset/flex'
+                },
+                {
+                  text: 'display',
+                  link: '/guide/preset/display'
+                },
+                {
+                  text: '上下左右',
+                  link: '/guide/preset/top'
+                },
+                {
+                  text: 'zIndex',
+                  link: '/guide/preset/zIndex'
+                },
+              ]
             },
             {
-              text: 'border边框',
-              link: '/guide/preset/border'
+              text: 'flex',
+              items: [
+                {
+                  text: 'flex',
+                  link: '/guide/preset/flex'
+                },
+              ]
             },
             {
-              text: 'color颜色',
-              link: '/guide/preset/color'
+              text: '间隔',
+              items: [
+                {
+                  text: 'm、p边距',
+                  link: '/guide/preset/marginPadding'
+                },
+              ]
+            },
+            {
+              text: '宽高',
+              items: [
+                {
+                  text: '宽高',
+                  link: '/guide/preset/widthHeight'
+                },
+              ]
+            },
+            {
+              text: '文字排版',
+              items: [
+                {
+                  text: 'color颜色',
+                  link: '/guide/preset/color'
+                },
+                {
+                  text: 'font字体',
+                  link: '/guide/preset/font'
+                },
+                {
+                  text: 'line-height行高',
+                  link: '/guide/preset/lineHeight'
+                },
+                {
+                  text: 'line省略',
+                  link: '/guide/preset/line'
+                },
+              ]
+            },
+            {
+              text: '背景',
+              items: [
+                {
+                  text: '背景',
+                  link: '/guide/preset/bg'
+                },
+              ]
+            },
+            {
+              text: '边框',
+              items: [
+                {
+                  text: 'border边框',
+                  link: '/guide/preset/border'
+                },
+              ]
+            },
+           {
+              text: 'Transforms',
+              items: [
+                {
+                  text: 'translate变换',
+                  link: '/guide/preset/translate'
+                },
+              ]
             },
             {
               text: 'shadow阴影',
               link: '/guide/preset/shadow'
             },
             {
-              text: '上下左右',
-              link: '/guide/preset/top'
-            },
-            {
-              text: '宽高',
-              link: '/guide/preset/widthHeight'
-            },
-            {
-              text: 'line-height行高',
-              link: '/guide/preset/lineHeight'
-            },
-            {
               text: 'poiter鼠标样式',
               link: '/guide/preset/poiter'
             },
-            {
-              text: 'm、p边距',
-              link: '/guide/preset/marginPadding'
-            },
-            {
-              text: 'font字体',
-              link: '/guide/preset/font'
-            },
-            {
-              text: 'translate变换',
-              link: '/guide/preset/translate'
-            },
-            {
-              text: 'flex',
-              link: '/guide/preset/flex'
-            },
-            {
-              text: 'display',
-              link: '/guide/preset/display'
-            },
-            {
-              text: 'zIndex',
-              link: '/guide/preset/zIndex'
-            },
+
+
           ]
         }
       ],
