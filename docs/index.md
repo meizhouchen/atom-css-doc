@@ -7,8 +7,8 @@ hero:
   text: ""
   tagline: 原子化 体积小 uniapp
   image:
-    src: /logo.png
-    alt: VitePress
+    src: https://ask.dcloud.net.cn/uploads/avatar/001/67/43/81_avatar_max.jpg
+    alt: AtomCSS
   actions:
     - theme: brand
       text: 快速上手
@@ -19,7 +19,7 @@ hero:
 
 features:
   - icon: 
-      src: /logo.png
+      src: https://ask.dcloud.net.cn/uploads/avatar/001/67/43/81_avatar_max.jpg
     title: uniapp
     details: 支持uniapp，一份代码，多份bug
   - icon: 🛠
