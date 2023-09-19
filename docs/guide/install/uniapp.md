@@ -49,5 +49,26 @@ export default defineConfig({
     presets: [preset()], //预设
 })
 ```
+
+## 第四步、使用
+
+```vue
+<template>
+  <view class="a-p-32 a-m-32 a-c-#2">
+    <view class="a-w-100%">页面内容</view>
+  </view>
+</template>
+```
+上面的class样式将会自动被编译为：
+```css
+.a-p-32 { pading: 32px; }
+.a-m-32 { magin: 32px; }
+.a-c-_2 { color: #222222; }
+.a-icon-80 { width: 80px; height: 80px;}
+.a-w-100_ { width: 100%; }
+```
+
 ## 项目结构示例
-![目录结构](uniapp_files/1.jpg)
+![](uniapp_files/1.png)
+## 交流群
+![](uniapp_files/2.jpg)

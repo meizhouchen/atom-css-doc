@@ -1,28 +1,28 @@
 # 文字超出省略
 样式规则：
 
-line-[整数]
+ellipsis-[整数]
 
-[前缀]line-[整数]
+[前缀]ellipsis-[整数]
 
 ## 规则示例
 
 |	class| 对应生成的样式	|
 |--	|--	|
-|	line-1|	-webkit-line-clamp: 1;<br>overflow: hidden;<br>word-break: break-all;<br>text-overflow: ellipsis;<br>display: -webkit-box;<br>-webkit-box-orient: vertical;<br>|
-| line-2|  -webkit-line-clamp: 2;<br>overflow: hidden;<br>word-break: break-all;<br>text-overflow: ellipsis;<br>display: -webkit-box;<br>-webkit-box-orient: vertical;<br>|
+|	ellipsis-1|	-webkit-line-clamp: 1;<br>overflow: hidden;<br>word-break: break-all;<br>text-overflow: ellipsis;<br>display: -webkit-box;<br>-webkit-box-orient: vertical;<br>|
+| ellipsis-2|  -webkit-line-clamp: 2;<br>overflow: hidden;<br>word-break: break-all;<br>text-overflow: ellipsis;<br>display: -webkit-box;<br>-webkit-box-orient: vertical;<br>|
 
   
 ## 效果展示
-单行 line-1
-<div class="a-line-1 a-w-100 a-border">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
+单行 ellipsis-1
+<div class="a-ellipsis-1 a-w-100 a-border">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</div>
 
 ```html
 // 实际代码
-<div class="line-1">文字文字文字文字文字文字文字文字</div>
+<div class="ellipsis-1">文字文字文字文字文字文字文字文字</div>
 
 <style>
-  .line-1{
+  .ellipsis-1{
     -webkit-line-clamp: 1;
     overflow: hidden;
     word-break: break-all;
@@ -32,14 +32,14 @@ line-[整数]
   }
 </style>
 ```
-两行 line-2
-<div class="a-line-2 a-w-100 a-border">文字文字文字文字文字文字文字文字</div>
+两行 ellipsis-2
+<div class="a-ellipsis-2 a-w-100 a-border">文字文字文字文字文字文字文字文字</div>
 
 ```html
-<div class="line-2">文字文字文字文字文字文字文字文字</div>
+<div class="ellipsis-2">文字文字文字文字文字文字文字文字</div>
 
 <style>
-  .line-2{
+  .ellipsis-2{
     -webkit-line-clamp: 2;
     overflow: hidden;
     word-break: break-all;

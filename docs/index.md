@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "atomcss"
+  name: "AtomCSS"
   text: ""
   tagline: 原子化 体积小 uniapp
   image:
@@ -18,12 +18,15 @@ hero:
       link: /guide/why
 
 features:
-  - icon: 🛠️
+  - icon: 
+      src: /logo.png
     title: uniapp
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 支持uniapp，一份代码，多份bug
+  - icon: 🛠
+    title: 体积小
+    details: 按需生成，用到的css才会生成
+  - icon: 🎨
+    title: 灵活
+    details: 喜欢什么样的规则，可以自定义
 ---
 
