@@ -1,45 +1,29 @@
 import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.2127afa9.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"config/file2rule.md","filePath":"config/file2rule.md"}'),p={name:"config/file2rule.md"},o=l(`<h2 id="根据现有css文件-生成规则" tabindex="-1">根据现有css文件，生成规则 <a class="header-anchor" href="#根据现有css文件-生成规则" aria-label="Permalink to &quot;根据现有css文件，生成规则&quot;">​</a></h2><p>字符串形式</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">...</span></span>
-<span class="line"><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">plugins</span><span style="color:#E1E4E8;">: [</span></span>
-<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">allin</span><span style="color:#E1E4E8;">({</span></span>
-<span class="line"><span style="color:#E1E4E8;">      cssFile: </span><span style="color:#9ECBFF;">&#39;./style/index.scss&#39;</span><span style="color:#E1E4E8;">,</span></span>
-<span class="line"><span style="color:#E1E4E8;">      presets: [</span><span style="color:#B392F0;">preset</span><span style="color:#E1E4E8;">()]</span></span>
-<span class="line"><span style="color:#E1E4E8;">    })</span></span>
-<span class="line"><span style="color:#E1E4E8;">  ]</span></span>
-<span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#F97583;">...</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">...</span></span>
-<span class="line"><span style="color:#24292E;"> </span><span style="color:#6F42C1;">plugins</span><span style="color:#24292E;">: [</span></span>
-<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">allin</span><span style="color:#24292E;">({</span></span>
-<span class="line"><span style="color:#24292E;">      cssFile: </span><span style="color:#032F62;">&#39;./style/index.scss&#39;</span><span style="color:#24292E;">,</span></span>
-<span class="line"><span style="color:#24292E;">      presets: [</span><span style="color:#6F42C1;">preset</span><span style="color:#24292E;">()]</span></span>
-<span class="line"><span style="color:#24292E;">    })</span></span>
-<span class="line"><span style="color:#24292E;">  ]</span></span>
-<span class="line"><span style="color:#24292E;">  </span><span style="color:#D73A49;">...</span></span></code></pre></div><p>对象形式</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">...</span></span>
-<span class="line"><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">plugins</span><span style="color:#E1E4E8;">: [</span></span>
-<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">allin</span><span style="color:#E1E4E8;">({</span></span>
-<span class="line"><span style="color:#E1E4E8;">      cssFile: {</span></span>
-<span class="line"><span style="color:#E1E4E8;">        input:</span><span style="color:#9ECBFF;">&#39;./style/index.scss&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 支持文件夹和文件路径 </span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">cssFile</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;./style/index.scss&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">presets</span><span style="color:#E1E4E8;">: [</span><span style="color:#B392F0;">preset</span><span style="color:#E1E4E8;">()]</span></span>
+<span class="line"><span style="color:#F97583;">...</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">...</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">cssFile</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;./style/index.scss&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">presets</span><span style="color:#24292E;">: [</span><span style="color:#6F42C1;">preset</span><span style="color:#24292E;">()]</span></span>
+<span class="line"><span style="color:#D73A49;">...</span></span></code></pre></div><p>对象形式</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">...</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#B392F0;">cssFile</span><span style="color:#E1E4E8;">: {</span></span>
+<span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">input</span><span style="color:#E1E4E8;">:</span><span style="color:#9ECBFF;">&#39;./style/index.scss&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 支持文件夹和文件路径 </span></span>
 <span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#6A737D;">// 局部 &gt; 全局，局部prefix，suffix可以覆盖全局的prefix，suffix</span></span>
-<span class="line"><span style="color:#E1E4E8;">        prefix: </span><span style="color:#9ECBFF;">&#39;f&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加前缀</span></span>
-<span class="line"><span style="color:#E1E4E8;">        suffix: </span><span style="color:#9ECBFF;">&#39;suf&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加后缀</span></span>
-<span class="line"><span style="color:#E1E4E8;">        rmPrefix: </span><span style="color:#9ECBFF;">&#39;uni-&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除前后缀</span></span>
-<span class="line"><span style="color:#E1E4E8;">        rmSuffix: </span><span style="color:#9ECBFF;">&#39;ff&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除增加后缀</span></span>
+<span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">prefix</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;f&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加前缀</span></span>
+<span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">suffix</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;suf&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加后缀</span></span>
+<span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">rmPrefix</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;uni-&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除前后缀</span></span>
+<span class="line"><span style="color:#E1E4E8;">        </span><span style="color:#B392F0;">rmSuffix</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&#39;ff&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除增加后缀</span></span>
 <span class="line"><span style="color:#E1E4E8;">      },</span></span>
-<span class="line"><span style="color:#E1E4E8;">      presets: [</span><span style="color:#B392F0;">preset</span><span style="color:#E1E4E8;">()]</span></span>
-<span class="line"><span style="color:#E1E4E8;">    })</span></span>
-<span class="line"><span style="color:#E1E4E8;">  ]</span></span>
+<span class="line"><span style="color:#E1E4E8;">      </span><span style="color:#B392F0;">presets</span><span style="color:#E1E4E8;">: [</span><span style="color:#B392F0;">preset</span><span style="color:#E1E4E8;">()]</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#F97583;">...</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">...</span></span>
-<span class="line"><span style="color:#24292E;"> </span><span style="color:#6F42C1;">plugins</span><span style="color:#24292E;">: [</span></span>
-<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">allin</span><span style="color:#24292E;">({</span></span>
-<span class="line"><span style="color:#24292E;">      cssFile: {</span></span>
-<span class="line"><span style="color:#24292E;">        input:</span><span style="color:#032F62;">&#39;./style/index.scss&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 支持文件夹和文件路径 </span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#6F42C1;">cssFile</span><span style="color:#24292E;">: {</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">input</span><span style="color:#24292E;">:</span><span style="color:#032F62;">&#39;./style/index.scss&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 支持文件夹和文件路径 </span></span>
 <span class="line"><span style="color:#24292E;">        </span><span style="color:#6A737D;">// 局部 &gt; 全局，局部prefix，suffix可以覆盖全局的prefix，suffix</span></span>
-<span class="line"><span style="color:#24292E;">        prefix: </span><span style="color:#032F62;">&#39;f&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加前缀</span></span>
-<span class="line"><span style="color:#24292E;">        suffix: </span><span style="color:#032F62;">&#39;suf&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加后缀</span></span>
-<span class="line"><span style="color:#24292E;">        rmPrefix: </span><span style="color:#032F62;">&#39;uni-&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除前后缀</span></span>
-<span class="line"><span style="color:#24292E;">        rmSuffix: </span><span style="color:#032F62;">&#39;ff&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除增加后缀</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">prefix</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;f&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加前缀</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">suffix</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;suf&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css增加后缀</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">rmPrefix</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;uni-&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除前后缀</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#6F42C1;">rmSuffix</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&#39;ff&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 给这些文件内的css移除增加后缀</span></span>
 <span class="line"><span style="color:#24292E;">      },</span></span>
-<span class="line"><span style="color:#24292E;">      presets: [</span><span style="color:#6F42C1;">preset</span><span style="color:#24292E;">()]</span></span>
-<span class="line"><span style="color:#24292E;">    })</span></span>
-<span class="line"><span style="color:#24292E;">  ]</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#6F42C1;">presets</span><span style="color:#24292E;">: [</span><span style="color:#6F42C1;">preset</span><span style="color:#24292E;">()]</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#D73A49;">...</span></span></code></pre></div><blockquote><p>例如：</p></blockquote><p>文件内容</p><div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">// style/index</span><span style="color:#B392F0;">.scss</span></span>
 <span class="line"><span style="color:#B392F0;">.over-hide</span><span style="color:#E1E4E8;">{</span><span style="color:#79B8FF;">overflow</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">hidden</span><span style="color:#E1E4E8;">;}</span></span>
 <span class="line"><span style="color:#B392F0;">.flex-1</span><span style="color:#E1E4E8;">{</span><span style="color:#79B8FF;">flex</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">1</span><span style="color:#E1E4E8;">;}</span></span>
@@ -114,4 +98,4 @@ import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.2127afa9.js";const h=
 <span class="line"><span style="color:#24292E;">        })</span></span>
 <span class="line"><span style="color:#24292E;">      )</span></span>
 <span class="line"><span style="color:#24292E;">  }</span></span>
-<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div>`,12),e=[o];function c(t,E,r,y,i,F){return n(),a("div",null,e)}const f=s(p,[["render",c]]);export{h as __pageData,f as default};
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div>`,12),e=[o];function c(t,r,E,y,i,F){return n(),a("div",null,e)}const f=s(p,[["render",c]]);export{h as __pageData,f as default};

@@ -3,21 +3,15 @@
 字符串形式
 ```js
 ...
- plugins: [
-    allin({
-      cssFile: './style/index.scss',
-      presets: [preset()]
-    })
-  ]
-  ...
+    cssFile: './style/index.scss',
+    presets: [preset()]
+...
 
 ```
 
 对象形式
 ```js
 ...
- plugins: [
-    allin({
       cssFile: {
         input:'./style/index.scss', // 支持文件夹和文件路径 
         // 局部 > 全局，局部prefix，suffix可以覆盖全局的prefix，suffix
@@ -27,8 +21,6 @@
         rmSuffix: 'ff', // 给这些文件内的css移除增加后缀
       },
       presets: [preset()]
-    })
-  ]
   ...
 
 ```

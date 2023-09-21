@@ -45,7 +45,8 @@ import { defineConfig } from '@meizhou/atomcss'
 import { preset } from "@meizhou/atomcss/preset";
 
 export default defineConfig({
-    prefix: 'a-',
+    prefix: 'a-', // 前缀 用于避免样式冲突
+    unit: 'px', // 宽高等的单位
     presets: [preset()], //预设
 })
 ```
@@ -67,7 +68,12 @@ export default defineConfig({
 .a-icon-80 { width: 80px; height: 80px;}
 .a-w-100_ { width: 100%; }
 ```
-
+## 代码提示
+- [x] css代码提示
+- [x] 悬浮class，查看对应的css样式
+- [ ] 直接写style，生成对应class
+- [ ] 根据主题，切换提示样式的颜色
+[HBuilderX插件地址](https://ext.dcloud.net.cn/plugin?id=14737)
 ## 项目结构示例
 ![](uniapp_files/1.png)
 ## 交流群

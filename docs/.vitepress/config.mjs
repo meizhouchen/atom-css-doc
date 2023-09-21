@@ -205,7 +205,7 @@ export default defineConfig({
         }
       ],
       '/config/': [{
-        text: '指引',
+        text: '配置项',
         items: [{
             text: 'presets预设',
             link: '/config/presets'
@@ -218,22 +218,22 @@ export default defineConfig({
             text: 'css权重',
             link: '/config/i'
           },
-          {
-            text: 'shortcuts缩写',
-            link: '/config/shortcuts'
-          },
+          // {
+          //   text: 'shortcuts缩写',
+          //   link: '/config/shortcuts'
+          // },
           {
             text: '前后缀',
             link: '/config/fix'
           },
-          {
-            text: '预览生成css',
-            link: '/config/outPutCss'
-          },
-          {
-            text: '文件转规则',
-            link: '/config/file2rule'
-          }
+          // {
+          //   text: '预览生成css',
+          //   link: '/config/outPutCss'
+          // },
+          // {
+          //   text: '文件转规则',
+          //   link: '/config/file2rule'
+          // }
         ]
       }],
       '/preset/': [{

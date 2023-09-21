@@ -1,34 +1,29 @@
-# 预设
-预设是一组写好的配置
+# 预设，技一套定义好的样式规则
+预设是一组写好的配置，把你自己喜欢的规则，统一管理，快速迁移使用
 
-## 对象形式预设
+## 第一种，对象形式
 ```js
 export const myPreset = {
   unit: 'px', // 宽高等的单位 
 }
 ```
 导入使用
-```js{6,14}
-// vite.config.js
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import allin from "css-allin-class";
-import preset from "css-allin-class/preset";
+```js{4,11}
+// atomcss.config.js
+import { defineConfig } from '@meizhou/atomcss'
+import { preset } from "@meizhou/atomcss/preset";
 import myPreset from "相对路径/myPreset";
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    allin({
-      presets: [
-        preset(),
-        myPreset
-      ] 
-    })
-  ]
+    prefix: 'a-',
+    unit: 'px', // 宽高等的单位
+    presets: [
+      preset(),
+      myPreset
+    ], //预设
 })
 ```
-## 函数形式预设
+## 第二种，函数形式
 ```js
 export const myPreset = (config) => {
   const { unit='rpx' } = config
@@ -39,22 +34,15 @@ export const myPreset = (config) => {
 ```
 导入使用
 ```js{6,14}
-// vite.config.js
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import allin from "css-allin-class";
-import preset from "css-allin-class/preset";
+// atomcss.config.js
+import { defineConfig } from '@meizhou/atomcss'
+import { preset } from "@meizhou/atomcss/preset";
 import myPreset from "相对路径/myPreset";
 
 export default defineConfig({
-  plugins: [
-    vue(),
-    allin({
-      presets: [
-        preset(),
-        myPreset({unit: px})
-      ] 
-    })
-  ]
+  presets: [
+    preset(),
+    myPreset({unit: px})
+  ] 
 })
 ```
