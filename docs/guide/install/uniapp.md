@@ -32,8 +32,8 @@ import { atomcss } from "@meizhou/atomcss";
 
 export default defineConfig({
   plugins: [
-    uni(),
-    atomcss()
+    atomcss(),
+    uni()
   ]
 })
 ```
@@ -45,7 +45,7 @@ import { defineConfig } from '@meizhou/atomcss'
 import { preset } from "@meizhou/atomcss/preset";
 
 export default defineConfig({
-    prefix: 'a-', // 前缀 用于避免样式冲突
+    prefix: 'a-', // 前缀 用于避免样式冲突 默认值: '' 没有前缀
     unit: 'px', // 宽高等的单位
     presets: [preset()], //预设
 })
