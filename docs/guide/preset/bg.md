@@ -1,9 +1,3 @@
-## css颜色变量
-```js
-class='bg-v-c-bg-page' => 'background-color:var(--c-bg-page);'
-class='c-v-c-bg-page' => 'color:var(--c-bg-page);'
-class='c-v-c1-bg2-3' => 'color:var(--c1-bg2-3);'
-```
 
 ## 颜色
 ```js

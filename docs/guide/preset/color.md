@@ -1,11 +1,21 @@
-## css颜色变量
-```js
-class='bg-v-c-bg-page' => 'background-color:var(--c-bg-page);'
-class='c-v-c-bg-page' => 'color:var(--c-bg-page);'
-class='c-v-c1-bg2-3' => 'color:var(--c1-bg2-3);'
+# 颜色
+
+## 字体颜色
+<div class="a-c-red">c-red</div>
+
+<div class="a-c-#6" style="color:#6">c-#6</div>
+
+<div class="a-c-#30bf16" style="color:#30bf16">c-#30bf16</div>
+
+实际代码
+
+```html
+<div class="a-c-red">c-red</div>
+<div class="a-c-#6">c-#6</div>
+<div class="a-c-#30bf16">c-#30bf16</div>
 ```
 
-## 颜色
+## 更多使用示例
 ```js
 class='c-#123' => 'color:#123;'
 class='c-#1' => 'color:#111111;'

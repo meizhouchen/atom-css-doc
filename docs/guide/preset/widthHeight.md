@@ -1,14 +1,14 @@
-## 宽高
+# 宽高
 ```js
-class='icon-4.04' => 'width:4.04rpx;height:4.04rpx;'
-class='icon-4.04rem' => 'width:4.04rem;height:4.04rem;'
-class='icon-4' => 'width:4rpx;height:4rpx;'
-class='icon-4vh' => 'width:4vh;height:4vh;'
-class='icon-21vw' => 'width:21vw;height:21vw;'
-class='icon-21rem' => 'width:21rem;height:21rem;'
-class='icon-21px' => 'width:21px;height:21px;'
-class='icon-21rpx' => 'width:21rpx;height:21rpx;'
-class='icon-40%' => 'width:40%;height:40%;'
+class='wh-4.04' => 'width:4.04rpx;height:4.04rpx;'
+class='wh-4.04rem' => 'width:4.04rem;height:4.04rem;'
+class='wh-4' => 'width:4rpx;height:4rpx;'
+class='wh-4vh' => 'width:4vh;height:4vh;'
+class='wh-21vw' => 'width:21vw;height:21vw;'
+class='wh-21rem' => 'width:21rem;height:21rem;'
+class='wh-21px' => 'width:21px;height:21px;'
+class='wh-21rpx' => 'width:21rpx;height:21rpx;'
+class='wh-40%' => 'width:40%;height:40%;'
 
 class='width-100' => 'width:100rpx;'
 class='width-100vh' => 'width:100vh;'
