@@ -46,8 +46,8 @@ import { preset } from "@meizhou/atomcss/preset";
 
 export default defineConfig({
     prefix: 'a-', // 前缀 用于避免样式冲突 默认值: '' 没有前缀
-    unit: 'px', // 宽高等的单位
-    presets: [preset()], //预设
+    unit: 'px', // 宽高等的单位  默认值: px
+    presets: [preset()], //预设 
 })
 ```
 
@@ -89,10 +89,10 @@ export default defineConfig({
 </div>
 ```
 ## 代码提示
-- [x] css代码提示
-- [x] 悬浮class，查看对应的css样式
-- [ ] 直接写style，生成对应class
-- [ ] 根据主题，切换提示样式的颜色
+- ✅ class 代码提示
+- ✅ 悬浮class，查看对应的css样式
+- ❌ 直接写style，生成对应class
+- ❌ 根据主题，切换提示样式的颜色
 [HBuilderX插件地址](https://ext.dcloud.net.cn/plugin?id=14737)
 ## 项目结构示例
 ![](uniapp_files/1.png)
