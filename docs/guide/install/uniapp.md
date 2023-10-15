@@ -54,21 +54,20 @@ export default defineConfig({
 ## 第四步、使用
 
 
-
 ```vue
 <template>
-  <view class="a-p-32 a-m-32 a-c-#2">
-    <view class="a-w-100%">页面内容</view>
+  <view class="p-32 m-32 c-#2">
+    <view class="w-100%">页面内容</view>
   </view>
 </template>
 ```
-上面的class样式将会自动被编译为：
+上面的p-32、m-32、c-#2、w-100%将会自动生成下面 css 样式,不需要写css
 ```css
-.a-p-32 { pading: 32px; }
-.a-m-32 { magin: 32px; }
-.a-c-_2 { color: #222222; }
-.a-wh-80 { width: 80px; height: 80px;}
-.a-w-100_ { width: 100%; }
+.p-32 { pading: 32px; }
+.m-32 { magin: 32px; }
+.c-_2 { color: #222222; }
+.wh-80 { width: 80px; height: 80px;}
+.w-100_ { width: 100%; }
 ```
 ### 示例
 <div class="a-c-white">

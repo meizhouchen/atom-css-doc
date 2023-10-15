@@ -14,8 +14,8 @@ hero:
       text: 快速上手
       link: /guide/install/uniapp
     - theme: alt
-      text: 为什么是我？
-      link: /guide/why
+      text: 模板
+      link: /template/popup
 
 features:
   - icon: 

@@ -27,10 +27,27 @@ export default defineConfig({
         text: '配置',
         link: '/config/'
       },
+      {
+        text: '模板',
+        link: '/template/popup'
+      },
       // { text: '预设样式', link: '/preset/' }
     ],
 
     sidebar: {
+      '/template/': [{
+        text: '模板',
+        items: [{
+            text: '弹窗',
+            link: '/template/popup'
+          },{
+            text: '按钮',
+            link: '/template/btn'
+          },{
+            text: '优惠券',
+            link: '/template/coupon'
+          },]
+      }],
       '/guide/': [{
           text: '指引',
           items: [{
@@ -79,6 +96,22 @@ export default defineConfig({
         {
           text: '预设样式',
           items: [{
+              text: 'loading加载动画',
+              items: [
+                {
+                  text: 'text文字',
+                  link: '/guide/preset/loading/text'
+                },
+                {
+                  text: 'dot圆点',
+                  link: '/guide/preset/loading/dot'
+                },
+                {
+                  text: 'bar柱状',
+                  link: '/guide/preset/loading/bar'
+                },
+              ]
+            },{
               text: '布局',
               items: [
 
