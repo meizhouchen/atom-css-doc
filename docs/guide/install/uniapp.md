@@ -72,8 +72,8 @@ export default defineConfig({
 ### 示例
 <div class="a-c-white">
   <div class="a-flex a-c-white a-jc-c">
-    <div class="a-bg-#2  a-radius-10 a-icon-100 a-mr-10"  style="background-color:#222222">flex</div>
-    <div class="a-bg-#9  a-flex  a-jc-c a-ai-c a-w-100 a-radius-30" style="background-color:#999999">flex</div>
+    <div class="a-bg-#2b9939  a-radius-8 a-wh-50 a-mr-10 a-flex a-jc-c a-ai-c a-fs-40"  style="background-color:#2b9939">U</div>
+    <div class="a-bg-#9  a-flex  a-jc-c a-ai-c a-w-100 a-radius-30" style="background-color:#999999">atomcss</div>
   </div>
 </div>
 
@@ -82,8 +82,8 @@ export default defineConfig({
 ```vue
 <div class="c-white">
   <div class="flex c-white jc-c">
-    <div class="bg-#2 radius-10 mr-10 wh-100">flex</div>
-    <div class="bg-#9 radius-30 flex jc-c ai-c w-100">flex</div>
+    <div class="bg-#2b9939 radius-8 mr-10 wh-100 flex jc-c ai-c fs-40">U</div>
+    <div class="bg-#9 radius-30 flex jc-c ai-c w-100">atomcss</div>
   </div>
 </div>
 ```
@@ -96,4 +96,12 @@ export default defineConfig({
 ## 项目结构示例
 ![](uniapp_files/1.png)
 ## 交流群
-![](uniapp_files/2.jpg)
+<div class="a-flex c-white jc-c">
+<img class="a-w-400" :src="withBase('./uniapp_files/1.jpg')" style="background-color:#999999">
+<img class="a-w-300" :src="withBase('./uniapp_files/2.jpg')" style="background-color:#999999">
+</div>
+
+<script setup>
+import { withBase, useData } from 'vitepress'
+
+</script>

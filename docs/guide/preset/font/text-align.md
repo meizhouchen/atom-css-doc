@@ -1,4 +1,4 @@
-# text-align"
+# text-align
 ```js
   class="ta-l" => "text-align: left;"
   class="ta-c" => "text-align: center;"

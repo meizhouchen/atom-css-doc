@@ -1,14 +1,22 @@
 import {
   defineConfig
 } from 'vitepress'
-import { atomcss } from '@meizhou/atomcss'
-import { preset } from "@meizhou/atomcss/preset";
+import {
+  atomcss
+} from '@meizhou/atomcss'
+import {
+  preset
+} from "@meizhou/atomcss/preset";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
     plugins: [
-      atomcss({ unit: 'px', prefix: 'a-', presets: [preset()] })
+      atomcss({
+        unit: 'px',
+        prefix: 'a-',
+        presets: [preset()]
+      })
     ]
   },
   base: '/atom-css-doc/',
@@ -38,15 +46,15 @@ export default defineConfig({
       '/template/': [{
         text: '模板',
         items: [{
-            text: '弹窗',
-            link: '/template/popup'
-          },{
-            text: '按钮',
-            link: '/template/btn'
-          },{
-            text: '优惠券',
-            link: '/template/coupon'
-          },]
+          text: '弹窗',
+          link: '/template/popup'
+        }, {
+          text: '按钮',
+          link: '/template/btn'
+        }, {
+          text: '优惠券',
+          link: '/template/coupon'
+        }, ]
       }],
       '/guide/': [{
           text: '指引',
@@ -137,6 +145,14 @@ export default defineConfig({
                   text: 'visibility',
                   link: '/guide/preset/layout/visibility'
                 },
+                {
+                  text: 'opacity',
+                  link: '/guide/preset/layout/opacity'
+                },
+                {
+                  text: 'vertical-align',
+                  link: '/guide/preset/layout/vertical-align'
+                },
               ]
             },
             {
@@ -223,7 +239,7 @@ export default defineConfig({
                 },
                 {
                   text: 'font字体',
-                  link: '/guide/preset/font'
+                  link: '/guide/preset/font/font-size'
                 },
                 {
                   text: 'text-align',
@@ -250,16 +266,29 @@ export default defineConfig({
             {
               text: '背景',
               items: [{
-                text: '背景',
-                link: '/guide/preset/bg'
+                text: '背景颜色',
+                link: '/guide/preset/bg/bg'
               }, ]
             },
             {
               text: '边框',
               items: [{
-                text: 'border边框',
-                link: '/guide/preset/border'
-              }, ]
+                  text: 'border边框',
+                  link: '/guide/preset/border/border'
+                },
+                {
+                  text: 'border-color',
+                  link: '/guide/preset/border/border-color'
+                },
+                {
+                  text: 'border-radius',
+                  link: '/guide/preset/border/border-radius'
+                },
+                {
+                  text: 'border-width',
+                  link: '/guide/preset/border/border-width'
+                },
+              ]
             },
             {
               text: 'Transforms',
