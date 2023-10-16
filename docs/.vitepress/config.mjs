@@ -95,23 +95,25 @@ export default defineConfig({
         },
         {
           text: '预设样式',
-          items: [{
-              text: 'loading加载动画',
-              items: [
-                {
-                  text: 'text文字',
-                  link: '/guide/preset/loading/text'
-                },
-                {
-                  text: 'dot圆点',
-                  link: '/guide/preset/loading/dot'
-                },
-                {
-                  text: 'bar柱状',
-                  link: '/guide/preset/loading/bar'
-                },
-              ]
-            },{
+          items: [
+            // {
+            //   text: 'loading加载动画',
+            //   items: [
+            //     {
+            //       text: 'text文字',
+            //       link: '/guide/preset/loading/text'
+            //     },
+            //     {
+            //       text: 'dot圆点',
+            //       link: '/guide/preset/loading/dot'
+            //     },
+            //     {
+            //       text: 'bar柱状',
+            //       link: '/guide/preset/loading/bar'
+            //     },
+            //   ]
+            // },
+            {
               text: '布局',
               items: [
 
@@ -120,12 +122,20 @@ export default defineConfig({
                   link: '/guide/preset/layout/display'
                 },
                 {
+                  text: 'position',
+                  link: '/guide/preset/layout/position'
+                },
+                {
                   text: '上下左右',
                   link: '/guide/preset/layout/top'
                 },
                 {
                   text: 'zIndex',
                   link: '/guide/preset/layout/zIndex'
+                },
+                {
+                  text: 'visibility',
+                  link: '/guide/preset/layout/visibility'
                 },
               ]
             },
@@ -167,20 +177,42 @@ export default defineConfig({
                   text: 'justify-self',
                   link: '/guide/preset/flex/justify-self'
                 },
+                {
+                  text: 'align-items',
+                  link: '/guide/preset/flex/align-items'
+                },
+                {
+                  text: 'align-content',
+                  link: '/guide/preset/flex/align-content'
+                },
+                {
+                  text: 'align-self',
+                  link: '/guide/preset/flex/align-self'
+                },
+                {
+                  text: 'columns',
+                  link: '/guide/preset/flex/columns'
+                },
               ]
             },
             {
               text: '间隔',
               items: [{
-                text: 'm、p边距',
-                link: '/guide/preset/marginPadding'
+                text: 'margin',
+                link: '/guide/preset/marginPadding/margin'
+              }, {
+                text: 'padding',
+                link: '/guide/preset/marginPadding/padding'
               }, ]
             },
             {
               text: '宽高',
               items: [{
                 text: '宽高',
-                link: '/guide/preset/widthHeight'
+                link: '/guide/preset/widthHeight/widthHeight'
+              }, {
+                text: '最大最小宽高',
+                link: '/guide/preset/widthHeight/maxWH'
               }, ]
             },
             {
@@ -194,11 +226,23 @@ export default defineConfig({
                   link: '/guide/preset/font'
                 },
                 {
+                  text: 'text-align',
+                  link: '/guide/preset/font/text-align'
+                },
+                {
+                  text: 'font-weight',
+                  link: '/guide/preset/font/fw'
+                },
+                {
+                  text: 'text-decoration-line',
+                  link: '/guide/preset/font/text-decoration-line'
+                },
+                {
                   text: 'line-height行高',
                   link: '/guide/preset/lineHeight'
                 },
                 {
-                  text: 'line省略',
+                  text: 'ellipsis省略',
                   link: '/guide/preset/line'
                 },
               ]

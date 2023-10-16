@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as o}from"./chunks/framework.2127afa9.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"config/shortcuts.md","filePath":"config/shortcuts.md"}'),s={name:"config/shortcuts.md"};function c(r,a,n,i,f,p){return e(),o("div")}const m=t(s,[["render",c]]);export{d as __pageData,m as default};
