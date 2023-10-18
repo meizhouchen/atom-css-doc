@@ -51,9 +51,6 @@ export default defineConfig({
         }, {
           text: '按钮',
           link: '/template/btn'
-        }, {
-          text: '优惠券',
-          link: '/template/coupon'
         }, ]
       }],
       '/guide/': [{
@@ -161,26 +158,7 @@ export default defineConfig({
                   text: 'flex',
                   link: '/guide/preset/flex/flex'
                 },
-                {
-                  text: 'flex-basis',
-                  link: '/guide/preset/flex/flex-basis'
-                },
-                {
-                  text: 'flex-direction',
-                  link: '/guide/preset/flex/flex-direction'
-                },
-                {
-                  text: 'flex-grow',
-                  link: '/guide/preset/flex/flex-grow'
-                },
-                {
-                  text: 'flex-shrink',
-                  link: '/guide/preset/flex/flex-shrink'
-                },
-                {
-                  text: 'flex-wrap',
-                  link: '/guide/preset/flex/flex-wrap'
-                },
+
                 {
                   text: 'justify-content',
                   link: '/guide/preset/flex/justify-content'
@@ -204,6 +182,26 @@ export default defineConfig({
                 {
                   text: 'align-self',
                   link: '/guide/preset/flex/align-self'
+                },
+                {
+                  text: 'flex-basis',
+                  link: '/guide/preset/flex/flex-basis'
+                },
+                {
+                  text: 'flex-direction',
+                  link: '/guide/preset/flex/flex-direction'
+                },
+                {
+                  text: 'flex-grow',
+                  link: '/guide/preset/flex/flex-grow'
+                },
+                {
+                  text: 'flex-shrink',
+                  link: '/guide/preset/flex/flex-shrink'
+                },
+                {
+                  text: 'flex-wrap',
+                  link: '/guide/preset/flex/flex-wrap'
                 },
                 {
                   text: 'columns',
@@ -238,7 +236,7 @@ export default defineConfig({
                   link: '/guide/preset/color'
                 },
                 {
-                  text: 'font字体',
+                  text: 'font-size',
                   link: '/guide/preset/font/font-size'
                 },
                 {

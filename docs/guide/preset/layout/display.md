@@ -1,5 +1,5 @@
 # display
-使用属性值作为class
+
 
 ## 效果
 <div class="a-c-white">
@@ -24,6 +24,7 @@
   <div class="inline-block bg-red">inline-block</div>
 </div>
 ```
+命名规律：使用属性值
 
 |class							|样式													|
 |--									|--														|

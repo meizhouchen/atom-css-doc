@@ -1,4 +1,5 @@
 # vertical-align
+命名规律：首字母缩写
 
 |class			|样式													|
 |--					|--														|

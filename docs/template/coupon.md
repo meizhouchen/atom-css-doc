@@ -6,8 +6,7 @@
 
 <div class="a-bg-red a-w-200 a-h-200" style="-webkit-mask-image: radial-gradient(circle at 38px 0px, transparent 38px, red 38.5px);
 -webkit-mask-position: -38px;"></div>
-11
-{{style}}
+
   <div class="">
     <div class="a-bg-red">
       <div class="a-w-200 a-h-200" :style="style"></div>

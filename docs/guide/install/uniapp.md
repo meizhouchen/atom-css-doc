@@ -72,8 +72,8 @@ export default defineConfig({
 ### 示例
 <div class="a-c-white">
   <div class="a-flex a-c-white a-jc-c">
-    <div class="a-bg-#2b9939  a-radius-8 a-wh-50 a-mr-10 a-flex a-jc-c a-ai-c a-fs-40"  style="background-color:#2b9939">U</div>
-    <div class="a-bg-#9  a-flex  a-jc-c a-ai-c a-w-100 a-radius-30" style="background-color:#999999">atomcss</div>
+    <div class="a-bg-#2b9939  a-radius-8 a-wh-50 a-mr-10 a-flex a-jc-c a-ai-c a-fs-40"  style="background-color:#2b9939">A</div>
+    <div class="a-bg-#9  a-flex  a-jc-c a-ai-c a-w-100 a-radius-30 a-mr-10" style="background-color:#999999">atomcss</div>
   </div>
 </div>
 
@@ -82,7 +82,7 @@ export default defineConfig({
 ```vue
 <div class="c-white">
   <div class="flex c-white jc-c">
-    <div class="bg-#2b9939 radius-8 mr-10 wh-100 flex jc-c ai-c fs-40">U</div>
+    <div class="bg-#2b9939 radius-8 mr-10 wh-100 flex jc-c ai-c fs-40">A</div>
     <div class="bg-#9 radius-30 flex jc-c ai-c w-100">atomcss</div>
   </div>
 </div>
@@ -93,12 +93,14 @@ export default defineConfig({
 - ❌ 直接写style，生成对应class
 - ❌ 根据主题，切换提示样式的颜色
 [HBuilderX插件地址](https://ext.dcloud.net.cn/plugin?id=14737)
+
 ## 项目结构示例
-![](uniapp_files/1.png)
+<img class="a-w-400" src="/1.png" style="background-color:#999999"> 
+
 ## 交流群
-<div class="a-flex c-white jc-c">
-<img class="a-w-400" :src="withBase('./uniapp_files/1.jpg')" style="background-color:#999999">
-<img class="a-w-300" :src="withBase('./uniapp_files/2.jpg')" style="background-color:#999999">
+<div class="a-flex c-white a-jc-sa">
+<img class="a-w-200" src="/1.jpg" style="background-color:#999999">
+<img class="a-w-200" src="/2.jpg" style="background-color:#999999"> 
 </div>
 
 <script setup>

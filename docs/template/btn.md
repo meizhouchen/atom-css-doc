@@ -14,7 +14,11 @@
 
 ```vue
 <template>
-
+  <div class="c-white br-20 bg-red flex ai-c jc-c w-268 h-40 fs-16 mb-10">好的</div>
+  <div class="c-white br-8 bg-darkgray flex ai-c jc-c w-268 h-40 fs-16">好的</div>
+  <button class="fs-16 c-white mt-10 br-8 bg-red w-268 h-44 flex ai-c jc-c mb-10">原生按钮</button>
+  <div class="br-20 c-red flex ai-c jc-c w-268 h-40 fs-16 mb-10">好的</div>
+  <div class="border-red br-8 c-red flex ai-c jc-c w-268 h-40 fs-16 mb-10">好的</div>
 </template>
 
 <style lang="scss" scoped></style>

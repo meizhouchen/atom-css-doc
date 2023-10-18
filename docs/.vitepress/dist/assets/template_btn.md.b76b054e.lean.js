@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as l,Q as n}from"./chunks/framework.4675998f.js";const g=JSON.parse('{"title":"弹窗","description":"","frontmatter":{},"headers":[],"relativePath":"template/btn.md","filePath":"template/btn.md"}'),o={name:"template/btn.md"},p=n("",10),t=[p];function e(c,r,E,y,i,d){return a(),l("div",null,t)}const h=s(o,[["render",e]]);export{g as __pageData,h as default};

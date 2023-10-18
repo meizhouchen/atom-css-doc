@@ -1,5 +1,5 @@
 # visibility
-使用属性值作为class
+命名规律：使用属性值
 
 
 |class							|样式													|

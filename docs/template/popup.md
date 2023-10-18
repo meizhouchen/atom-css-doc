@@ -4,7 +4,7 @@
 ## 提示弹窗
 效果
 
-<div class="a-p-10 a-br-12 a-flex a-col a-ai-c" style="background-color: gainsboro;">
+<div class="a-p-10 a-br-12 a-flex a-col a-ai-c" style="background-color: gainsboro;color: #222222;">
   <div class="a-bg-white a-w-300 a-flex a-col a-ai-c a-ptb-20 a-br-12">
     <div class="a-fs-16 a-fw-700">友情提示</div>
     <div class="a-c-6 a-p-16">具体的提示内容</div>
