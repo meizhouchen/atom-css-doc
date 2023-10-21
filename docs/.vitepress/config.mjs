@@ -73,11 +73,11 @@ export default defineConfig({
               link: '/guide/install/uniapp'
             },
             // {
-            //   text: 'vite',
+            //   text: 'vue3',
             //   link: '/guide/install/vite'
             // },
             // {
-            //   text: 'webpack',
+            //   text: 'vue2',
             //   link: '/guide/install/webpack'
             // },
             // {
@@ -101,6 +101,10 @@ export default defineConfig({
         {
           text: '预设样式',
           items: [
+            // {
+            //   text: '命名规则',
+            //   link: '/guide/preset/index'
+            // },
             // {
             //   text: 'loading加载动画',
             //   items: [
@@ -135,7 +139,7 @@ export default defineConfig({
                   link: '/guide/preset/layout/top'
                 },
                 {
-                  text: 'zIndex',
+                  text: 'z-index',
                   link: '/guide/preset/layout/zIndex'
                 },
                 {
@@ -149,6 +153,18 @@ export default defineConfig({
                 {
                   text: 'vertical-align',
                   link: '/guide/preset/layout/vertical-align'
+                },
+                {
+                  text: 'overflow',
+                  link: '/guide/preset/layout/overflow'
+                },
+                {
+                  text: 'object-fit',
+                  link: '/guide/preset/layout/object-fit'
+                },
+                {
+                  text: 'box-sizing',
+                  link: '/guide/preset/layout/box-sizing'
                 },
               ]
             },

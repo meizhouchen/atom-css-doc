@@ -27,7 +27,7 @@ export default defineConfig({
     plugins: [
       allin({ 
         unit:'px', 
-        prefix:'a-', // 必须使用前缀 否则容易存在样式冲突
+        prefix:'a-', // 必须使用前缀 否则存在样式冲突
         presets:[preset()]
       })
     ]

@@ -2,18 +2,18 @@
 ## 安装
 ::: code-group
 ```bash [npm]
-npm i -D all-in-class
+npm i -D @meizhou/atomcss
 ```
 
 ```bash [pnpm]
-pnpm i -D all-in-class
+pnpm i -D @meizhou/atomcss
 ```
 :::
 ## 修改vue配置文件
 ```js
 // vue.config.js
-const { allin } = require('all-in-class')
-const { preset } = require('all-in-class/preset')
+const { atomcss } = require('@meizhou/atomcss')
+const { preset } = require('@meizhou/atomcss/preset')
 
 module.exports = {
   configureWebpack: {
