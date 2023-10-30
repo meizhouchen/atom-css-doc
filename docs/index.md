@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "AtomCSS"
   text: ""
-  tagline: 原子化 体积小 uniapp
+  tagline: 为uniapp而生
   image:
     src: https://ask.dcloud.net.cn/uploads/avatar/001/67/43/81_avatar_max.jpg
     alt: AtomCSS
@@ -21,7 +21,7 @@ features:
   - icon: 
       src: https://ask.dcloud.net.cn/uploads/avatar/001/67/43/81_avatar_max.jpg
     title: uniapp
-    details: 支持uniapp，一份代码，多份bug
+    details: 为uniapp而生，支持vue、nvue、uvue
   - icon: 🛠
     title: 体积小
     details: 按需生成，用到的css才会生成

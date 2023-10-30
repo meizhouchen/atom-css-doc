@@ -9,16 +9,16 @@ npm i -D @meizhou/atomcss
 pnpm i -D @meizhou/atomcss
 ```
 :::
-## 第二步、修改 vue 配置文件
+## 第二步、新增或修改 vue 配置文件
 ::: code-group
 ```js [vue2]
 // vue.config.js
-const { atomcss } = require('@meizhou/atomcss')
+const { atomcss } = require('@meizhou/atomcss') // 导入插件
 
 module.exports = {
   configureWebpack: {
     plugins: [
-      atomcss()
+      atomcss() // 使用插件
     ]
   }
 }
@@ -28,15 +28,16 @@ module.exports = {
 // vite.config.js
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni';
-import { atomcss } from "@meizhou/atomcss";
+import { atomcss } from "@meizhou/atomcss"; // 导入插件
 
 export default defineConfig({
   plugins: [
-    atomcss(),
+    atomcss(), // 使用插件
     uni()
   ]
 })
 ```
+
 :::
 ## 第三步、增加 atomcss 配置文件
 ```js
