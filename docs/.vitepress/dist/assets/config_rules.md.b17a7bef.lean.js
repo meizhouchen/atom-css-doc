@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.4675998f.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"config/rules.md","filePath":"config/rules.md"}'),p={name:"config/rules.md"},o=l("",6),e=[o];function c(t,r,E,y,F,i){return n(),a("div",null,e)}const B=s(p,[["render",c]]);export{C as __pageData,B as default};

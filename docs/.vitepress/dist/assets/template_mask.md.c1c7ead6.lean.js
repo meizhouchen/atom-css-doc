@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.4675998f.js";const g=JSON.parse('{"title":"弹窗","description":"","frontmatter":{},"headers":[],"relativePath":"template/mask.md","filePath":"template/mask.md"}'),p={name:"template/mask.md"},o=l("",6),t=[o];function e(c,r,E,y,i,u){return a(),n("div",null,t)}const f=s(p,[["render",e]]);export{g as __pageData,f as default};
