@@ -7,7 +7,9 @@ import {
 import {
   preset
 } from "@meizhou/atomcss/preset";
-
+import {
+  version
+} from "@meizhou/atomcss";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
@@ -26,7 +28,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     nav: [
-      // { text: '首页', link: '/' },
       {
         text: '指引',
         link: '/guide/start'
@@ -39,6 +40,7 @@ export default defineConfig({
         text: '模板',
         link: '/template/popup'
       },
+      { text: `v${version}`, link: '/change-log/change-log' }
       // { text: '预设样式', link: '/preset/' }
     ],
 
@@ -337,6 +339,10 @@ export default defineConfig({
           {
             text: 'css权重',
             link: '/config/i'
+          },
+          {
+            text: 'icons图标',
+            link: '/config/icon'
           },
           // {
           //   text: 'shortcuts缩写',
