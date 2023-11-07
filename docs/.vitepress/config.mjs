@@ -27,6 +27,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
+    outlineTitle : '本页目录',
     nav: [
       {
         text: '指引',
