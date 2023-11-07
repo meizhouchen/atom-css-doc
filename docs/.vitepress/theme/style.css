@@ -44,14 +44,25 @@
  * -------------------------------------------------------------------------- */
 
  :root {
+ /*  --vp-c-brand: var(--vp-c-green);
+   --vp-c-brand-light: var(--vp-c-green-light);
+   --vp-c-brand-lighter: var(--vp-c-green-lighter);
+   --vp-c-brand-dark: var(--vp-c-green-dark);
+   --vp-c-brand-darker: var(--vp-c-green-darker); */
+   --vt-c-green: #42b883;
+   --vt-c-green-light: #42d392;
+   --vt-c-green-lighter: #35eb9a;
+   --vt-c-green-dark: #33a06f;
+   --vt-c-green-darker: #2b875d;
+   
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-3: var(--vp-c-gray-1);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
+  --vp-c-brand-1: var(--vt-c-green);
+  --vp-c-brand-2: var(--vt-c-green-dark);
+  --vp-c-brand-3: var(--vt-c-green);
   --vp-c-brand-soft: var(--vp-c-indigo-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
