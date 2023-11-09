@@ -38,6 +38,13 @@ export default defineConfig({
         link: '/config/'
       },
       {
+        text: '组件',
+        items: [{
+          text: 'iconPark字节图标',
+          link: '/components/icon/icon'
+        } ]
+      },
+      {
         text: '模板',
         link: '/template/popup'
       },
@@ -46,6 +53,16 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/components/': [{
+        text: 'iconPark',
+        items: [{
+          text: '使用',
+          link: '/components/icon/install'
+        }, {
+          text: '图标列表',
+          link: '/components/icon/icon'
+        }, ]
+      }],
       '/template/': [{
         text: '模板',
         items: [{
