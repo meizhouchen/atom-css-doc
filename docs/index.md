@@ -7,7 +7,7 @@ hero:
   text: ""
   tagline: 为uniapp而生
   image:
-    src: https://ask.dcloud.net.cn/uploads/avatar/001/67/43/81_avatar_max.jpg
+    src: /logo.png
     alt: AtomCSS
   actions:
     - theme: brand

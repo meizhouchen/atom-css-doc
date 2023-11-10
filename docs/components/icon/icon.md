@@ -1,5 +1,5 @@
 # icon
-
+uniapp的uni_modules版的iconPack  
 已经完成
 
 1. ✅ 图标风格（颜色）切换
@@ -71,20 +71,20 @@ function toUpperCamelCase(str) {
 <style module>
 .grid {
   display: grid;
-   grid-gap: 10px;
-   grid-template-columns: repeat(3, 20%);
-    grid-template-columns: repeat(auto-fill, 200px);
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-columns: repeat(auto-fill, 200px);
 }
 .item {
- background: #fff;
-     border: 1px solid #f0f0f0;
-     border-radius: 4px;
-     box-sizing: border-box;
-     cursor: pointer;
-     overflow: hidden;
-     justify-item: center;
-     display: flex;
-     padding: 8px 0;
-     font-size: 12px
-    }
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  justify-items: center;
+  display: flex;
+  padding: 8px 0;
+  font-size: 12px
+}
 </style>

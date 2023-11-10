@@ -42,7 +42,22 @@
  * - `danger`: Used to show error, or dangerous message to the users. Used
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
-
+div {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  /*定义滚动条轨道：内阴影+圆角*/
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color:  var(--vp-c-gray-soft);
+  }
+  /*定义滑块：内阴影+圆角*/
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--vp-c-gray-1);
+  }
+}
  :root {
  /*  --vp-c-brand: var(--vp-c-green);
    --vp-c-brand-light: var(--vp-c-green-light);

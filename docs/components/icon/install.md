@@ -1,6 +1,9 @@
-# 安装
+# iconPack
+专为uniapp打造的iconPack  
 
-插件市场导入项目
+## 安装
+
+前往[插件市场](https://ext.dcloud.net.cn/plugin?id=15331)导入项目
 
 ## 使用
 
