@@ -15,6 +15,7 @@
 4. ☑️ 文档提供字体下载
 5. ☑️ 文档提供字svg文件下载
 
+建议复制[iconPark](https://iconpark.oceanengine.com/official)的vue组件，为了解决冲突，组件增加了前缀i
 
 <script setup>
 import { ref } from 'vue'

@@ -6,32 +6,45 @@
 
 <script>
 import Lightning from './Lightning.js'
-// // 描边连接类型
-// export type StrokeLinejoin = 'miter' | 'round' | 'bevel';
-
-// // 描边端点类型
-// export type StrokeLinecap = 'butt' | 'round' | 'square';
-
-// // 主题
-// export type Theme = 'outline' | 'filled' | 'two-tone' | 'multi-color';
 
 export default {
-  name: 'AIconSvg',
+  name: 'ILightning',
   components: {},
   props: {
     size: {
       type: [String, Number],
-      default: 24
+      default: 16,
+      desc: '图标的大小，即宽高的值'
     },
     strokeWidth: {
       type: [String, Number],
-      default: 4
+      default: 4,
+      desc: '线条宽度'
     },
     theme: {
       type: String,
-      default: 'outline'
+      default: 'outline',
+      validator(value) {
+        return ['outline', 'filled', 'two-tone', 'multi-color'].includes(value)
+      }
     },
-    color: {
+    strokeLinecap: {
+      type: String,
+      default: 'round',
+      validator(value) {
+        return ['butt', 'round', 'square'].includes(value)
+      },
+      desc: '描边端点类型'
+    },
+    strokeLinejoin: {
+      type: String,
+      default: 'round',
+      validator(value) {
+        return ['miter', 'round', 'bevel'].includes(value)
+      },
+      desc: '描边连接类型'
+    },
+    fill: {
       type: [String, Array],
       default: '#000000'
     }
@@ -39,8 +52,6 @@ export default {
 
   data() {
     return {
-      strokeLinecap: 'round',
-      strokeLinejoin: 'round',
       rtl: false,
       colors1: {
         outline: {
@@ -68,7 +79,7 @@ export default {
 
   computed: {
     fillColor() {
-      return typeof this.color === 'string' ? [this.color] : this.color || []
+      return typeof this.fill === 'string' ? [this.fill] : this.fill || []
     },
     outStrokeColor() {
       return typeof this.fillColor[0] === 'string' ? this.fillColor[0] : 'currentColor'
@@ -89,16 +100,23 @@ export default {
     colors() {
       const ff = {
         outline: 'outline',
-        fill: 'fill',
-        two: 'twoTone',
-        multi: 'multi'
+        filled: 'filled',
+        'two-tone': 'twoTone',
+        'multi-color': 'multi'
       }
-      return this[this.theme]()
+      return this[ff[this.theme]]()
     },
     boxStyle() {
+      let size = this.size + ''
+      if(/\d$/.test(this.size)){
+        size = this.size + 'px'
+      }else if(size.endsWith('rpx')){
+        size = uni.upx2px(Number(size)) + 'px'
+      }
+      
       const style = {
-        width: this.size + 'px',
-        height: this.size + 'px'
+        width: size,
+        height: size
       }
       return style
     },
@@ -118,10 +136,10 @@ export default {
     multi() {
       return [this.outStrokeColor, this.outFillColor, this.innerStrokeColor, this.innerFillColor]
     },
-    two() {
+    twoTone() {
       return [this.outStrokeColor, this.outFillColor, this.outStrokeColor, this.outFillColor]
     },
-    fill() {
+    filled() {
       return [this.outStrokeColor, this.outStrokeColor, '#FFF', '#FFF']
     },
     outline() {

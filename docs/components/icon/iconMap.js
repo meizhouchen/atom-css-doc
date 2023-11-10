@@ -9,6 +9,7 @@ export const icons = [
     tag: ['工具', '登山杖', '拐杖', '木棍'],
     rtl: true
   },
+  // <all-application theme="multi-color" size="24" :fill="['#333' ,'#2F88FF' ,'#FFF' ,'#43CCF8']"/>
   {
     id: 1,
     title: '腹部',
