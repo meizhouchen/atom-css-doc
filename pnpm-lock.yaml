@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@meizhou/atomcss': ^0.0.18
+  '@meizhou/atomcss': link:E:/project/atom-css/packages/css-allin-class/
   '@vue/theme': ^2.2.5
   vitepress: 1.0.0-rc.15
 
