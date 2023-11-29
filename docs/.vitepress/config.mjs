@@ -298,34 +298,57 @@ export default defineConfig({
                   text: 'line-clamp省略',
                   link: '/guide/preset/font/line-clamp'
                 },
-
-                
               ]
             },
             {
               text: '背景',
               items: [{
-                text: '背景颜色',
-                link: '/guide/preset/bg/bg'
-              }, ]
+                  text: 'background-attachment',
+                  link: '/guide/preset/bg/attachment'
+                },
+                {
+                  text: 'background-clip',
+                  link: '/guide/preset/bg/clip'
+                },
+                {
+                  text: 'background-color',
+                  link: '/guide/preset/bg/bg'
+                },
+                {
+                  text: 'background-origin',
+                  link: '/guide/preset/bg/origin'
+                },
+                {
+                  text: 'background-position',
+                  link: '/guide/preset/bg/position'
+                },
+                {
+                  text: 'background-size',
+                  link: '/guide/preset/bg/size'
+                },
+              ]
             },
             {
               text: '边框',
               items: [{
-                  text: 'border边框',
-                  link: '/guide/preset/border/border'
-                },
-                {
-                  text: 'border-color',
-                  link: '/guide/preset/border/border-color'
-                },
-                {
                   text: 'border-radius',
                   link: '/guide/preset/border/border-radius'
                 },
                 {
                   text: 'border-width',
                   link: '/guide/preset/border/border-width'
+                },
+                {
+                  text: 'border-color',
+                  link: '/guide/preset/border/border-color'
+                },
+                {
+                  text: 'border-style',
+                  link: '/guide/preset/border/border-style'
+                },
+                {
+                  text: 'border边框',
+                  link: '/guide/preset/border/border'
                 },
               ]
             },
@@ -337,9 +360,18 @@ export default defineConfig({
               }, ]
             },
             {
-              text: 'shadow阴影',
-              link: '/guide/preset/shadow'
+              text: '效果',
+              items: [{
+                  text: 'shadow阴影',
+                  link: '/guide/preset/shadow'
+                },
+                {
+                  text: 'translate变换',
+                  link: '/guide/preset/translate'
+                },
+              ]
             },
+
             {
               text: 'poiter鼠标样式',
               link: '/guide/preset/poiter'

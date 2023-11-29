@@ -1,4 +1,5 @@
-# outline-width
+
+# background-attachment
 
 <script setup>
 import { useData } from 'vitepress'
@@ -7,11 +8,9 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['bw-10', 'border-width:4rpx;'],
-  ['bw-b-2', 'border-bottom-radius:2px;'],
-  ['bw-l-3', 'border-left-radius:3px;'],
-  ['bw-r-4', 'border-right-radius:4px;'],
-  ['bw-t-1', 'border-top-radius:1px;'],
+  ['bg-fixed', 'background-attachment: fixed;'],
+  ['bg-local', 'background-attachment: local;'],
+  ['bg-scroll', 'background-attachment: scroll;'],
 ])
 </script>
 
@@ -21,7 +20,7 @@ const list = ref([
 </div>
 <div class="a-h-200 a-flex-1" style="overflow-y:auto;max-height: 300px">
 
-  <div class="a-flex a-row a-jc-sb a-ai-c a-border-b a-min-h-30" v-for="(item, index) in list" :key="index" >
+  <div class="a-flex a-row a-jc-sb a-border-b a-h-30" v-for="(item, index) in list" :key="index" >
     <div class="a-flex-1">{{item[0]}}</div>
     <div class="a-flex-1">{{item[1]}}</div>
   </div>

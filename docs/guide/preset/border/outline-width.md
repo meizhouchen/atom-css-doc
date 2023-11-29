@@ -1,17 +1,12 @@
-# outline-width
+# border-width
 
 <script setup>
 import { useData } from 'vitepress'
 import { ref } from 'vue'
 
 const { page } = useData()
-
 const list = ref([
-  ['bw-10', 'border-width:4rpx;'],
-  ['bw-b-2', 'border-bottom-radius:2px;'],
-  ['bw-l-3', 'border-left-radius:3px;'],
-  ['bw-r-4', 'border-right-radius:4px;'],
-  ['bw-t-1', 'border-top-radius:1px;'],
+  ['ow-1', 'outline-width:1rpx;'],
 ])
 </script>
 
