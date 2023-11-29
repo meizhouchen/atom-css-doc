@@ -1,15 +1,9 @@
-import {
-  defineConfig
-} from 'vitepress'
-import {
-  atomcss
-} from '@meizhou/atomcss'
-import {
-  preset
-} from "@meizhou/atomcss/preset";
-import {
-  version
-} from "@meizhou/atomcss";
+import { defineConfig } from 'vitepress'
+import { atomcss } from '@meizhou/atomcss'
+import { preset } from "@meizhou/atomcss/preset";
+import { version } from "@meizhou/atomcss";
+import { layout } from "./config/layout.mjs";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   vite: {
@@ -27,9 +21,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
-    outlineTitle : '本页目录',
-    nav: [
-      {
+    outlineTitle: '本页目录',
+    nav: [{
         text: '指引',
         link: '/guide/start'
       },
@@ -42,7 +35,7 @@ export default defineConfig({
         items: [{
           text: 'iconPark字节图标',
           link: '/components/icon/icon'
-        } ]
+        }]
       },
       {
         text: '模板',
@@ -142,106 +135,80 @@ export default defineConfig({
             //     },
             //   ]
             // },
+            layout,
             {
-              text: '布局',
-              items: [
-
-                {
-                  text: 'display',
-                  link: '/guide/preset/layout/display'
-                },
-                {
-                  text: 'position',
-                  link: '/guide/preset/layout/position'
-                },
-                {
-                  text: '上下左右',
-                  link: '/guide/preset/layout/top'
-                },
-                {
-                  text: 'z-index',
-                  link: '/guide/preset/layout/zIndex'
-                },
-                {
-                  text: 'visibility',
-                  link: '/guide/preset/layout/visibility'
-                },
-                {
-                  text: 'opacity',
-                  link: '/guide/preset/layout/opacity'
-                },
-                {
-                  text: 'vertical-align',
-                  link: '/guide/preset/layout/vertical-align'
-                },
-                {
-                  text: 'overflow',
-                  link: '/guide/preset/layout/overflow'
-                },
-                {
-                  text: 'object-fit',
-                  link: '/guide/preset/layout/object-fit'
-                },
-                {
-                  text: 'box-sizing',
-                  link: '/guide/preset/layout/box-sizing'
-                },
-              ]
-            },
-            {
-              text: 'flex',
+              text: 'flex & grid',
               items: [{
                   text: 'flex',
-                  link: '/guide/preset/flex/flex'
-                },
-
-                {
-                  text: 'justify-content',
-                  link: '/guide/preset/flex/justify-content'
-                },
-                {
-                  text: 'justify-items',
-                  link: '/guide/preset/flex/justify-items'
-                },
-                {
-                  text: 'justify-self',
-                  link: '/guide/preset/flex/justify-self'
-                },
-                {
-                  text: 'align-items',
-                  link: '/guide/preset/flex/align-items'
-                },
-                {
-                  text: 'align-content',
-                  link: '/guide/preset/flex/align-content'
-                },
-                {
-                  text: 'align-self',
-                  link: '/guide/preset/flex/align-self'
-                },
-                {
-                  text: 'flex-basis',
-                  link: '/guide/preset/flex/flex-basis'
+                  link: '/guide/preset/flexGrid/flex'
                 },
                 {
                   text: 'flex-direction',
-                  link: '/guide/preset/flex/flex-direction'
-                },
-                {
-                  text: 'flex-grow',
-                  link: '/guide/preset/flex/flex-grow'
-                },
-                {
-                  text: 'flex-shrink',
-                  link: '/guide/preset/flex/flex-shrink'
+                  link: '/guide/preset/flexGrid/flex-direction'
                 },
                 {
                   text: 'flex-wrap',
-                  link: '/guide/preset/flex/flex-wrap'
+                  link: '/guide/preset/flexGrid/flex-wrap'
+                },
+                {
+                  text: 'flex-basis',
+                  link: '/guide/preset/flexGrid/flex-basis'
+                },
+                {
+                  text: 'flex-grow',
+                  link: '/guide/preset/flexGrid/flex-grow'
+                },
+                {
+                  text: 'flex-shrink',
+                  link: '/guide/preset/flexGrid/flex-shrink'
+                },
+                {
+                  text: 'order',
+                  link: '/guide/preset/flexGrid/order'
+                },
+                {
+                  text: 'gap',
+                  link: '/guide/preset/flexGrid/gap'
+                },
+                {
+                  text: 'justify-content',
+                  link: '/guide/preset/flexGrid/justify-content'
+                },
+                {
+                  text: 'justify-items',
+                  link: '/guide/preset/flexGrid/justify-items'
+                },
+                {
+                  text: 'justify-self',
+                  link: '/guide/preset/flexGrid/justify-self'
+                },
+                {
+                  text: 'align-content',
+                  link: '/guide/preset/flexGrid/align-content'
+                },
+                {
+                  text: 'align-items',
+                  link: '/guide/preset/flexGrid/align-items'
+                },
+                {
+                  text: 'align-self',
+                  link: '/guide/preset/flexGrid/align-self'
                 },
                 {
                   text: 'columns',
-                  link: '/guide/preset/flex/columns'
+                  link: '/guide/preset/flexGrid/columns'
+                },
+                {
+                  text: 'place-content',
+                  link: '/guide/preset/flexGrid/place-content'
+                },
+                {
+                  text: 'place-items',
+                  link: '/guide/preset/flexGrid/place-items'
+                },
+                {
+                  text: 'place-self',
+                  link: '/guide/preset/flexGrid/place-self'
                 },
               ]
             },
@@ -258,43 +225,81 @@ export default defineConfig({
             {
               text: '宽高',
               items: [{
-                text: '宽高',
-                link: '/guide/preset/widthHeight/widthHeight'
-              }, {
-                text: '最大最小宽高',
-                link: '/guide/preset/widthHeight/maxWH'
-              }, ]
+                  text: 'width',
+                  link: '/guide/preset/widthHeight/width'
+                },
+                {
+                  text: 'maxWidth',
+                  link: '/guide/preset/widthHeight/maxWidth'
+                },
+                {
+                  text: 'minWidth',
+                  link: '/guide/preset/widthHeight/minWidth'
+                },
+                {
+                  text: 'height',
+                  link: '/guide/preset/widthHeight/height'
+                },
+                {
+                  text: 'maxHeight',
+                  link: '/guide/preset/widthHeight/maxHeight'
+                },
+
+                {
+                  text: 'minHeight',
+                  link: '/guide/preset/widthHeight/minHeight'
+                },
+                {
+                  text: 'width & height',
+                  link: '/guide/preset/widthHeight/wh'
+                },
+              ]
             },
             {
               text: '文字排版',
               items: [{
                   text: 'color颜色',
-                  link: '/guide/preset/color'
+                  link: '/guide/preset/font/color'
                 },
                 {
                   text: 'font-size',
                   link: '/guide/preset/font/font-size'
                 },
                 {
-                  text: 'text-align',
-                  link: '/guide/preset/font/text-align'
-                },
-                {
                   text: 'font-weight',
                   link: '/guide/preset/font/fw'
                 },
                 {
-                  text: 'text-decoration-line',
+                  text: 'text-align',
+                  link: '/guide/preset/font/text-align'
+                },
+                {
+                  text: 'text-decoration',
                   link: '/guide/preset/font/text-decoration-line'
                 },
                 {
-                  text: 'line-height行高',
-                  link: '/guide/preset/lineHeight'
+                  text: 'text-indent',
+                  link: '/guide/preset/font/text-indent'
                 },
                 {
-                  text: 'ellipsis省略',
-                  link: '/guide/preset/line'
+                  text: 'vertical-align',
+                  link: '/guide/preset/font/vertical-align'
                 },
+
+                {
+                  text: 'letter-spacing',
+                  link: '/guide/preset/font/letter-spacing'
+                },
+                {
+                  text: 'line-height行高',
+                  link: '/guide/preset/font/line-height'
+                },
+                {
+                  text: 'line-clamp省略',
+                  link: '/guide/preset/font/line-clamp'
+                },
+
+                
               ]
             },
             {
