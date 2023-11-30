@@ -171,6 +171,10 @@ export default defineConfig({
                   link: '/guide/preset/flexGrid/gap'
                 },
                 {
+                  text: 'grid-template-columns',
+                  link: '/guide/preset/flexGrid/grid-template-columns'
+                },
+                {
                   text: 'justify-content',
                   link: '/guide/preset/flexGrid/justify-content'
                 },
@@ -402,9 +406,26 @@ export default defineConfig({
               ]
             },
             {
-              text: 'poiter鼠标样式',
-              link: '/guide/preset/poiter'
+              text: 'interactivity',
+              items: [{
+                text: 'resize',
+                link: '/guide/preset/interactivity/resize'
+              }, 
+              {
+                text: 'user-select',
+                link: '/guide/preset/interactivity/user-select'
+              }, 
+              {
+                text: 'will-change',
+                link: '/guide/preset/interactivity/will-change'
+              }, 
+              {
+                text: 'cursor',
+                link: '/guide/preset/interactivity/cursor'
+              },
+              ]
             },
+            
           ]
         }
       ],
