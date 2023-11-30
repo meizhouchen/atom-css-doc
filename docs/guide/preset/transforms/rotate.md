@@ -1,4 +1,5 @@
-## blur
+# rotate
+
 <script setup>
 import { useData } from 'vitepress'
 import { ref } from 'vue'
@@ -6,7 +7,9 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['blur-1', 'filter: blur(1px);'],
+  ['rotate-0', 'transform: rotate(0deg);'],
+  ['rotate-.8', 'transform: rotate(.8deg);'],
+  ['rotate-10.1', 'transform: rotate(10.1deg);'],
 ])
 </script>
 

@@ -1,12 +1,22 @@
-## blur
+# skew
+
 <script setup>
 import { useData } from 'vitepress'
 import { ref } from 'vue'
 
 const { page } = useData()
 
+
+
 const list = ref([
-  ['blur-1', 'filter: blur(1px);'],
+  ['skew-x-0', 'transform:skewX(0deg);'],
+  ['skew-x-10', 'transform:skewX(10deg);'],
+  ['skew-x-10.1', 'transform:skewX(10.1deg);'],
+  ['skew-x-.1', 'transform:skewX(.1deg);'],
+  ['skew-y-0', 'transform:skewY(0deg);'],
+  ['skew-y-10', 'transform:skewY(10deg);'],
+  ['skew-y-10.1', 'transform:skewY(10.1deg);'],
+  ['skew-y-.1', 'transform:skewY(.1deg);'],
 ])
 </script>
 

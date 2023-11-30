@@ -1,4 +1,4 @@
-## blur
+## brightness
 <script setup>
 import { useData } from 'vitepress'
 import { ref } from 'vue'
@@ -6,7 +6,8 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['blur-1', 'filter: blur(1px);'],
+  ['blur-1', 'filter: brightness(1);'],
+  ['blur-1.5', 'filter: brightness(1.5);'],
 ])
 </script>
 

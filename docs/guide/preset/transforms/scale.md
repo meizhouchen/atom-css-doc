@@ -1,4 +1,5 @@
-## blur
+# scale
+
 <script setup>
 import { useData } from 'vitepress'
 import { ref } from 'vue'
@@ -6,7 +7,11 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['blur-1', 'filter: blur(1px);'],
+  ['scale-0', 'transform: scale(0);'],
+  ['scale-.8', 'transform: scale(.8);'],
+  ['scale-10.1', 'transform: scale(10.1);'],
+  ['scale-x-0', 'transform: scaleX(0);'],
+  ['scale-y-0', 'transform: scaleY(0);'],
 ])
 </script>
 

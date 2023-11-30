@@ -352,18 +352,12 @@ export default defineConfig({
                 },
               ]
             },
-            {
-              text: 'Transforms',
-              items: [{
-                text: 'translate变换',
-                link: '/guide/preset/translate'
-              }, ]
-            },
+ 
             {
               text: '效果',
               items: [{
                   text: 'shadow阴影',
-                  link: '/guide/preset/shadow'
+                  link: '/guide/preset/effects/shadow'
                 },
                 {
                   text: 'translate变换',
@@ -371,13 +365,46 @@ export default defineConfig({
                 },
               ]
             },
-
+            {
+              text: 'filters',
+              items: [{
+                  text: 'blur',
+                  link: '/guide/preset/filters/blur'
+                },
+                {
+                  text: 'brightness',
+                  link: '/guide/preset/filters/brightness'
+                },
+              ]
+            },
+            {
+              text: 'Transforms',
+              items: [{
+                text: 'scale',
+                link: '/guide/preset/transforms/scale'
+              }, 
+              {
+                text: 'rotate',
+                link: '/guide/preset/transforms/rotate'
+              }, 
+              {
+                text: 'skew',
+                link: '/guide/preset/transforms/skew'
+              }, 
+              {
+                text: 'translate',
+                link: '/guide/preset/transforms/translate'
+              }, 
+              {
+                text: 'transform-origin',
+                link: '/guide/preset/transforms/transform-origin'
+              }, 
+              ]
+            },
             {
               text: 'poiter鼠标样式',
               link: '/guide/preset/poiter'
             },
-
-
           ]
         }
       ],
