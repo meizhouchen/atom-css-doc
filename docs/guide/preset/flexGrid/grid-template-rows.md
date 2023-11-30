@@ -1,4 +1,4 @@
-# grid-template-columns
+# grid-template-rows
 
 <script setup>
 import { useData } from 'vitepress'
@@ -7,8 +7,8 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-['grid-cols-1', 'grid-template-columns: repeat(1, minmax(0, 1fr));'],
-['grid-cols-12', 'grid-template-columns: repeat(12, minmax(0, 1fr));'],
+  ['grid-rows-1', 'grid-template-rows: repeat(1, minmax(0, 1fr));'],
+  ['grid-rows-12', 'grid-template-rows: repeat(12, minmax(0, 1fr));'],
 ])
 </script>
 

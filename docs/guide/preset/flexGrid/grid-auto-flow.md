@@ -1,4 +1,4 @@
-# grid-template-columns
+# grid-template-rows
 
 <script setup>
 import { useData } from 'vitepress'
@@ -7,12 +7,15 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-['grid-cols-1', 'grid-template-columns: repeat(1, minmax(0, 1fr));'],
-['grid-cols-12', 'grid-template-columns: repeat(12, minmax(0, 1fr));'],
+  ['grid-flow-row', 'grid-auto-flow: row;'],
+  ['grid-flow-col', 'grid-auto-flow: column;'],
+  ['grid-flow-dense', 'grid-auto-flow: dense;'],
+  ['grid-flow-row-dense', 'grid-auto-flow: row dense;'],
+  ['grid-flow-col-dense', 'grid-auto-flow: column dense;'],
 ])
 </script>
 
-命名规律：`gap-{数值}` 
+<!-- 命名规律：`gap-{数值}` -->
  
 <div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
   <div class="a-flex-1">class名</div>

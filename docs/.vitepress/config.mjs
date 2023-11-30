@@ -175,6 +175,10 @@ export default defineConfig({
                   link: '/guide/preset/flexGrid/grid-template-columns'
                 },
                 {
+                  text: 'grid-template-rows',
+                  link: '/guide/preset/flexGrid/grid-template-rows'
+                },
+                {
                   text: 'justify-content',
                   link: '/guide/preset/flexGrid/justify-content'
                 },
