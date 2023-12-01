@@ -1,8 +1,33 @@
 # align-items
-```js
-class="ai-c" => "align-items: center;"
-class="ai-fs" => "align-items: flex-start;"
-class="ai-fe" => "align-items: flex-end;"
-class="ai-s" => "align-items: stretch;"
-class="ai-b" => "align-items: baseline;"
-```
+
+
+<script setup>
+import { useData } from 'vitepress'
+import { ref } from 'vue'
+
+const { page } = useData()
+
+const list = ref([
+  ["ai-c" , "align-items: center;"],
+  ["ai-fs" , "align-items: flex-start;"],
+  ["ai-fe" , "align-items: flex-end;"],
+  ["ai-s" , "align-items: stretch;"],
+  ["ai-b" , "align-items: baseline;"],
+])
+</script>
+
+命名规律：首字母
+ 
+<div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
+  <div class="a-flex-1">class名</div>
+  <div class="a-flex-1">样式值</div>
+</div>
+<div class=" a-flex-1 " style="overflow-y:auto;max-height: 300px">
+  <div class="a-flex a-row a-ai-c a-jc-sb a-border-b a-min-h-30" v-for="(item, index) in list" :key="index" >
+    <div class="a-flex-1">{{item[0]}}</div>
+    <div class="a-flex-1">{{item[1]}}</div>
+  </div>
+</div>
+
+## 使用示例
+

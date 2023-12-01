@@ -1,12 +1,37 @@
 # align-content
-```js
-class="ac-n" => "align-content: normal;"
-class="ac-c" => "align-content: center;"
-class="ac-fs" => "align-content: flex-start;"
-class="ac-fe" => "align-content: flex-end;"
-class="ac-sb" => "align-content: space-between;"
-class="ac-sa" => "align-content: space-around;"
-class="ac-se" => "align-content: sspace-evenly;"
-class="ac-s" => "align-content: stretch;"
-class="ac-b" => "align-content: baseline;"
-```
+
+
+<script setup>
+import { useData } from 'vitepress'
+import { ref } from 'vue'
+
+const { page } = useData()
+
+const list = ref([
+  ["ac-n" , "align-content: normal;"],
+  ["ac-c" , "align-content: center;"],
+  ["ac-fs" , "align-content: flex-start;"],
+  ["ac-fe" , "align-content: flex-end;"],
+  ["ac-sb" , "align-content: space-between;"],
+  ["ac-sa" , "align-content: space-around;"],
+  ["ac-se" , "align-content: sspace-evenly;"],
+  ["ac-s" , "align-content: stretch;"],
+  ["ac-b" , "align-content: baseline;"],
+])
+</script>
+
+命名规律：首字母
+ 
+<div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
+  <div class="a-flex-1">class名</div>
+  <div class="a-flex-1">样式值</div>
+</div>
+<div class=" a-flex-1 " style="overflow-y:auto;max-height: 300px">
+  <div class="a-flex a-row a-ai-c a-jc-sb a-border-b a-min-h-30" v-for="(item, index) in list" :key="index" >
+    <div class="a-flex-1">{{item[0]}}</div>
+    <div class="a-flex-1">{{item[1]}}</div>
+  </div>
+</div>
+
+## 使用示例
+

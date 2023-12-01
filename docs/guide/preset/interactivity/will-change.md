@@ -12,6 +12,10 @@ const list = ref([
   ['will-change-scroll', 'will-change: scroll-position;'],
   ['will-change-contents', 'will-change: contents;'],
   ['will-change-transform', 'will-change: transform;'],
+  ['wc-auto', 'will-change: auto;'],
+  ['wc-scroll', 'will-change: scroll-position;'],
+  ['wc-contents', 'will-change: contents;'],
+  ['wc-transform', 'will-change: transform;'],
 ])
 </script>
 

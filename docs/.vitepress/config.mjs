@@ -367,10 +367,6 @@ export default defineConfig({
                   text: 'shadow阴影',
                   link: '/guide/preset/effects/shadow'
                 },
-                {
-                  text: 'translate变换',
-                  link: '/guide/preset/translate'
-                },
               ]
             },
             {

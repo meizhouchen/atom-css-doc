@@ -7,12 +7,12 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-['grid-cols-1', 'grid-template-columns: repeat(1, minmax(0, 1fr));'],
-['grid-cols-12', 'grid-template-columns: repeat(12, minmax(0, 1fr));'],
+  ['grid-cols-1', 'grid-template-columns: repeat(1, minmax(0, 1fr));'],
+  ['grid-cols-12', 'grid-template-columns: repeat(12, minmax(0, 1fr));'],
 ])
 </script>
 
-命名规律：`gap-{数值}` 
+命名规律：`grid-cols-{数值}` 
  
 <div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
   <div class="a-flex-1">class名</div>

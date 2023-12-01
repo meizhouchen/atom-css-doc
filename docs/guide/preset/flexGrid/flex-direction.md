@@ -1,10 +1,31 @@
-# flex-wrap
+# flex-direction
+
+<script setup>
+import { useData } from 'vitepress'
+import { ref } from 'vue'
+
+const { page } = useData()
+
+const list = ref([
+  ["row", "flex-direction: row;"],
+  ["row-reverse",  "flex-direction: row-reverse;"],
+  ["col", "flex-direction: column;"],
+  ["col-reverse",  "flex-direction: column-reverse;"],
+])
+</script>
+
 命名规律：属性值
+ 
+<div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
+  <div class="a-flex-1">class名</div>
+  <div class="a-flex-1">样式值</div>
+</div>
+<div class=" a-flex-1" style="overflow-y:auto;max-height: 300px">
+  <div class="a-flex a-row a-jc-sb a-border-b a-h-30" v-for="(item, index) in list" :key="index" >
+    <div class="a-flex-1">{{item[0]}}</div>
+    <div class="a-flex-1">{{item[1]}}</div>
+  </div>
+</div>
 
-```js
-class="row" => "flex-direction: row;"
-class="row-reverse" =>  "flex-direction: row-reverse;"
+## 使用示例
 
-class="col" => "flex-direction: column;"
-class="col-reverse" =>  "flex-direction: column-reverse;"
-  ```
