@@ -3,6 +3,7 @@ import { atomcss } from '@meizhou/atomcss'
 import { preset } from "@meizhou/atomcss/preset";
 import { version } from "@meizhou/atomcss";
 import { layout } from "./config/layout.mjs";
+import custom from "./config/custom.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -25,10 +26,6 @@ export default defineConfig({
     nav: [{
         text: '指引',
         link: '/guide/start'
-      },
-      {
-        text: '配置',
-        link: '/config/'
       },
       {
         text: '组件',
@@ -111,6 +108,7 @@ export default defineConfig({
             },
           ]
         },
+        custom,
         {
           text: '预设样式',
           items: [
@@ -429,42 +427,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/config/': [{
-        text: '配置项',
-        items: [{
-            text: 'presets预设',
-            link: '/config/presets'
-          },
-          {
-            text: 'rules规则',
-            link: '/config/rules'
-          },
-          {
-            text: 'css权重',
-            link: '/config/i'
-          },
-          {
-            text: 'icons图标',
-            link: '/config/icon'
-          },
-          // {
-          //   text: 'shortcuts缩写',
-          //   link: '/config/shortcuts'
-          // },
-          {
-            text: '前后缀',
-            link: '/config/fix'
-          },
-          // {
-          //   text: '预览生成css',
-          //   link: '/config/outPutCss'
-          // },
-          // {
-          //   text: '文件转规则',
-          //   link: '/config/file2rule'
-          // }
-        ]
-      }],
       '/preset/': [{
         text: '指引',
         items: [{

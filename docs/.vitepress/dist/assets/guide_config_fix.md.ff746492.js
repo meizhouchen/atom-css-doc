@@ -1,0 +1,21 @@
+import{_ as s,o as a,c as n,Q as p}from"./chunks/framework.47804b91.js";const f=JSON.parse('{"title":"全局添加前缀","description":"","frontmatter":{},"headers":[],"relativePath":"guide/config/fix.md","filePath":"guide/config/fix.md"}'),l={name:"guide/config/fix.md"},o=p(`<h1 id="全局添加前缀" tabindex="-1">全局添加前缀 <a class="header-anchor" href="#全局添加前缀" aria-label="Permalink to &quot;全局添加前缀&quot;">​</a></h1><h2 id="前缀-prefix" tabindex="-1">前缀 prefix <a class="header-anchor" href="#前缀-prefix" aria-label="Permalink to &quot;前缀 prefix&quot;">​</a></h2><p>用于避免样式冲突，一般在老项目中，才会用到</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark has-highlighted-lines vp-code-dark"><code><span class="line"><span style="color:#6A737D;">// atomcss.config.js</span></span>
+<span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> { defineConfig } </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;@meizhou/atomcss&#39;</span></span>
+<span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> { preset } </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&quot;@meizhou/atomcss/preset&quot;</span><span style="color:#E1E4E8;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">defineConfig</span><span style="color:#E1E4E8;">({</span></span>
+<span class="line"><span style="color:#E1E4E8;">  unit: </span><span style="color:#9ECBFF;">&#39;rpx&#39;</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line highlighted"><span style="color:#E1E4E8;">  prefix: </span><span style="color:#9ECBFF;">&#39;a-&#39;</span><span style="color:#E1E4E8;">, </span><span style="color:#6A737D;">// 前缀</span></span>
+<span class="line"><span style="color:#E1E4E8;">  presets: [</span></span>
+<span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#B392F0;">preset</span><span style="color:#E1E4E8;">(),</span></span>
+<span class="line"><span style="color:#E1E4E8;">  ] </span></span>
+<span class="line"><span style="color:#E1E4E8;">})</span></span></code></pre><pre class="shiki github-light has-highlighted-lines vp-code-light"><code><span class="line"><span style="color:#6A737D;">// atomcss.config.js</span></span>
+<span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> { defineConfig } </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;@meizhou/atomcss&#39;</span></span>
+<span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> { preset } </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&quot;@meizhou/atomcss/preset&quot;</span><span style="color:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">defineConfig</span><span style="color:#24292E;">({</span></span>
+<span class="line"><span style="color:#24292E;">  unit: </span><span style="color:#032F62;">&#39;rpx&#39;</span><span style="color:#24292E;">,</span></span>
+<span class="line highlighted"><span style="color:#24292E;">  prefix: </span><span style="color:#032F62;">&#39;a-&#39;</span><span style="color:#24292E;">, </span><span style="color:#6A737D;">// 前缀</span></span>
+<span class="line"><span style="color:#24292E;">  presets: [</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#6F42C1;">preset</span><span style="color:#24292E;">(),</span></span>
+<span class="line"><span style="color:#24292E;">  ] </span></span>
+<span class="line"><span style="color:#24292E;">})</span></span></code></pre></div>`,4),e=[o];function t(c,r,i,E,y,d){return a(),n("div",null,e)}const m=s(l,[["render",t]]);export{f as __pageData,m as default};

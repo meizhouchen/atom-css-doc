@@ -9,10 +9,10 @@ import { myPreset } from "相对路径/myPresetObject"; // 自己写的预设规
 
 export default defineConfig({
     prefix: 'a-', // 前缀 用于避免样式冲突
-    unit: 'px', // 宽高等的单位
+    unit: 'rpx', // 宽高等的单位
     // 预设
     presets: [
-      preset() // 插件默认预设
+      preset(), // 插件默认预设
       myPreset // 自己写的预设，对象形式 import导入
     ],
     // 单一的规则
@@ -32,9 +32,7 @@ export default defineConfig({
       // 动态规则 order-1 生成 .order-1{order:1}
       [
         /^(?:order)-(-?\d*\.?\d+)$/,
-        (match: RegExpMatchArray, { unit }: Config) => ({
-          order: `${match[1]};`
-        }),
+        (match: RegExpMatchArray, { unit }: Config) => `order:${match[1]};`,
         { completionItem: ['order-1'] } // 编辑器的代码提示候选项
       ]
     ]

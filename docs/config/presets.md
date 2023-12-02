@@ -1,7 +1,7 @@
 # 预设：一套定义好的样式规则
 预设是一组写好的配置，把你自己喜欢的规则，统一管理，快速迁移使用
 
-## 函数形式示例
+## 编写预设
 ```js
 export const myPreset = (config = {}) => {
   // 进行一些处理
@@ -21,7 +21,9 @@ export const myPreset = (config = {}) => {
   }
 }
 ```
-导入使用
+
+## 导入使用
+
 ```js{6,14}
 // atomcss.config.js
 import { defineConfig } from '@meizhou/atomcss'
