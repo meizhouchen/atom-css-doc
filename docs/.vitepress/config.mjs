@@ -340,18 +340,18 @@ export default defineConfig({
                   text: 'border-radius',
                   link: '/guide/preset/border/border-radius'
                 },
-                {
-                  text: 'border-width',
-                  link: '/guide/preset/border/border-width'
-                },
-                {
-                  text: 'border-color',
-                  link: '/guide/preset/border/border-color'
-                },
-                {
-                  text: 'border-style',
-                  link: '/guide/preset/border/border-style'
-                },
+                // {
+                //   text: 'border-width',
+                //   link: '/guide/preset/border/border-width'
+                // },
+                // {
+                //   text: 'border-color',
+                //   link: '/guide/preset/border/border-color'
+                // },
+                // {
+                //   text: 'border-style',
+                //   link: '/guide/preset/border/border-style'
+                // },
                 {
                   text: 'border边框',
                   link: '/guide/preset/border/border'

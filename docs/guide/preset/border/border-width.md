@@ -7,11 +7,11 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['bw-10', 'border-width:4rpx;'],
-  ['bw-b-2', 'border-bottom-radius:2px;'],
-  ['bw-l-3', 'border-left-radius:3px;'],
-  ['bw-r-4', 'border-right-radius:4px;'],
-  ['bw-t-1', 'border-top-radius:1px;'],
+  ['bdr-10', 'border-width:4rpx;'],
+  ['bdr-b-2', 'border-bottom-width:2px;'],
+  ['bdr-l-3', 'border-left-width:3px;'],
+  ['bdr-r-4', 'border-right-width:4px;'],
+  ['bdr-t-1', 'border-top-width:1px;'],
 ])
 </script>
 

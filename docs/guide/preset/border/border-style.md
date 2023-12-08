@@ -7,14 +7,15 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['bs-solid', 'border-style: solid;'],
-  ['bs-dashed', 'border-style: dashed;'],
-  ['bs-dotted', 'border-style: dotted;'],
-  ['bs-double', 'border-style: double;'],
-  ['bs-hidden', 'border-style: hidden;'],
-  ['bs-none', 'border-style: none;'],
+  ['bdr-solid', 'border-style: solid;'],
+  ['bdr-dashed', 'border-style: dashed;'],
+  ['bdr-dotted', 'border-style: dotted;'],
+  ['bdr-double', 'border-style: double;'],
+  ['bdr-hidden', 'border-style: hidden;'],
+  ['bdr-none', 'border-style: none;'],
 ])
 </script>
+
 
 <div class="a-flex a-row a-jc-sb a-border-b a-h-30"  >
   <div class="a-flex-1">class名</div>
@@ -27,3 +28,5 @@ const list = ref([
   </div>
 </div>
 
+## 指定border线条样式
+`bdr-{solid|dashed|dotted|double|hidden|none}` 默认为 solid

@@ -7,12 +7,14 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['lh-10', 'line-height: 10;'],
-  ['lh-10.09', 'line-height: 10.09;'],
-  ['lh-10.09', 'line-height: 10.09;'],
-  ['lh-.09', 'line-height: .09;'],
-  ['lh-10px', 'line-height: 10px;'],
-  ['lh-10rpx', 'line-height: 10rpx;'],
+  ['lh-10', 'line-height: 10rpx;'],
+  ['lh-10.09', 'line-height: 10.09rpx;'],
+  ['lh-10.09', 'line-height: 10.09rpx;'],
+  ['lh-.09', 'line-height: .09rpx;'],
+  ['lh-n-10', 'line-height: 10;'],
+  ['lh-n-10.09', 'line-height: 10.09;'],
+  ['lh-n-10.09', 'line-height: 10.09;'],
+  ['lh-n-.09', 'line-height: .09;'],
 ])
 </script>
 

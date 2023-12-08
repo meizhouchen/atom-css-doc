@@ -7,9 +7,13 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
-  ['bc-#4' , 'border-color:#444444;'],
-  ['bc-#45' , 'border-color:#454545;'],
-  ['bc-#456' , 'border-color:#456456;'],
+  ['border-#4' , 'border-color:#444444;'],
+  ['border-#45' , 'border-color:#454545;'],
+  ['border-#456' , 'border-color:#456456;'],
+  ['bdr-#4' , 'border-color:#444444;'],
+  ['bdr-brand' , 'border-color:#444444;'],
+  ['bdr-#45' , 'border-color:#454545;'],
+  ['bdr-#456' , 'border-color:#456456;'],
 ])
 </script>
 
@@ -25,3 +29,8 @@ const list = ref([
   </div>
 </div>
 
+## 使用主题色
+`bdr-{主题配置的颜色}`
+
+## 自定义颜色
+`bdr-{自定义颜色}`
