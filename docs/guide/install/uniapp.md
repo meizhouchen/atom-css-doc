@@ -32,7 +32,7 @@ import { atomcss } from "@meizhou/atomcss"; // 导入插件
 
 export default defineConfig({
   plugins: [
-    atomcss(), // 使用插件
+    atomcss(), // 使用插件, 务必在uni的前面
     uni()
   ]
 })

@@ -11,19 +11,8 @@ export default defineConfig({
   ],
   // 自定义规则
   rules: [
-    // 静态规则：
-    {
-      // class="c-custom"  => .c-custom{ color:#FFFFFF; }
-      'c-custom': 'color:#FFFFFF;',
-      
-      // class="center"  => .center{ justify-content: center;align-items: center; }
-      'center': 'justify-content: center;align-items: center;',
-      
-      // class="自定义的class"  => .自定义的class{ 对应生成的值 }
-      '自定义的class': '对应生成的值',
-    },
+    ['c-custom',  'color:#FFFFFF;']
     
-    // 动态规则：
     // [正则表达式, (正则匹配内容, { unit }) => { return '对应生成的值'}],
     [ /^m-(\d+)$/, (match, { unit }) => `margin: ${match[1]}${unit};` ],
     // 解释：
