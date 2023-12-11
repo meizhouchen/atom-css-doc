@@ -7,6 +7,7 @@ import { ref } from 'vue'
 const { page } = useData()
 
 const list = ref([
+  ["f", "display: flex;"],
   ["f-1", "flex: 1;"],
   ["f-1-1", "flex: 1 1;"],
   ["f-1-1%", "flex: 1 1%;"],

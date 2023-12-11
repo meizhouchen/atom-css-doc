@@ -8,12 +8,10 @@ export const myPreset = () => {
   
   return {
     rules: [
-      // 静态
       {
         'flex': 'display: flex;'
       },
-      // 动态
-      [/^m-(\d+)$/, (match, { unit }) => ({  'margin': `${match[1]}${unit};` })],
+      [/^m-(\d+)$/, (match, { unit }) => {return `margin:${match[1]}${unit};`}],
     ]
   }
 }

@@ -17,7 +17,7 @@ export default defineConfig({
   theme: {
     // 对于`border-radius`属性生效
     borderRadius: {
-      '字母名称': '对应值',
+      // '字母名称': '对应值',
       'xs': '20',
       'sm': '24',
       'md': '28',
@@ -26,6 +26,7 @@ export default defineConfig({
       '2xl': '40',
       '3xl': '80',
       '4xl': '120',
+      'full': '9999',
     },
   }
 })
@@ -33,3 +34,8 @@ export default defineConfig({
 
 ## 使用示例
 
+
+```js
+<view class="br-md"></view> // 生成： .fs-md{border-radius: 28rpx;}
+<view class="br-full"></view> // 生成： .fs-full{border-radius: 9999rpx;}
+```

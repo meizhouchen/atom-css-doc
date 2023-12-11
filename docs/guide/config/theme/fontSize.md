@@ -15,7 +15,7 @@ export default defineConfig({
   theme: {
     // 对于`font-size`属性生效
     fontSize: {
-      '字母名称': '对应值',
+      // '字母名称': '对应值',
       'xs': '20',
       'sm': '24',
       'md': '28',
@@ -31,3 +31,6 @@ export default defineConfig({
 
 ## 使用示例
 
+```js
+<view class="fs-md"></view> // 生成： .fs-md{font-size: 28rpx;}
+```
