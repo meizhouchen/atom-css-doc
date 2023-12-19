@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as i,Q as l}from"./chunks/framework.47804b91.js";const x=JSON.parse('{"title":"为什么要重复造轮子？","description":"","frontmatter":{},"headers":[],"relativePath":"guide/why.md","filePath":"guide/why.md"}'),t={name:"guide/why.md"},o=l("",9),r=[o];function d(n,s,h,c,p,_){return e(),i("div",null,r)}const m=a(t,[["render",d]]);export{x as __pageData,m as default};
