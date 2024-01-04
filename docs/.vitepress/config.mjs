@@ -3,6 +3,7 @@ import { atomcss } from '@meizhou/atomcss'
 import { preset } from "@meizhou/atomcss/preset";
 import { version } from "@meizhou/atomcss";
 import { layout } from "./config/layout.mjs";
+import { color } from "./config/color.mjs";
 import custom from "./config/custom.mjs";
 
 // https://vitepress.dev/reference/site-config
@@ -110,12 +111,8 @@ export default defineConfig({
         },
         custom,
         {
-          text: '预设样式',
+          text: '内置样式',
           items: [
-            // {
-            //   text: '命名规则',
-            //   link: '/guide/preset/index'
-            // },
             // {
             //   text: 'loading加载动画',
             //   items: [
@@ -133,12 +130,17 @@ export default defineConfig({
             //     },
             //   ]
             // },
+            color,
             layout,
             {
               text: 'flex & grid',
               items: [{
                   text: 'flex',
                   link: '/guide/preset/flexGrid/flex'
+                },
+                {
+                  text: 'flex组合使用',
+                  link: '/guide/preset/flexGrid/flex-combination'
                 },
                 {
                   text: 'flex-direction',
@@ -159,22 +161,6 @@ export default defineConfig({
                 {
                   text: 'flex-shrink',
                   link: '/guide/preset/flexGrid/flex-shrink'
-                },
-                {
-                  text: 'order',
-                  link: '/guide/preset/flexGrid/order'
-                },
-                {
-                  text: 'gap',
-                  link: '/guide/preset/flexGrid/gap'
-                },
-                {
-                  text: 'grid-template-columns',
-                  link: '/guide/preset/flexGrid/grid-template-columns'
-                },
-                {
-                  text: 'grid-template-rows',
-                  link: '/guide/preset/flexGrid/grid-template-rows'
                 },
                 {
                   text: 'justify-content',
@@ -200,6 +186,24 @@ export default defineConfig({
                   text: 'align-self',
                   link: '/guide/preset/flexGrid/align-self'
                 },
+
+                {
+                  text: 'order',
+                  link: '/guide/preset/flexGrid/order'
+                },
+                {
+                  text: 'gap',
+                  link: '/guide/preset/flexGrid/gap'
+                },
+                {
+                  text: 'grid-template-columns',
+                  link: '/guide/preset/flexGrid/grid-template-columns'
+                },
+                {
+                  text: 'grid-template-rows',
+                  link: '/guide/preset/flexGrid/grid-template-rows'
+                },
+               
                 {
                   text: 'columns',
                   link: '/guide/preset/flexGrid/columns'

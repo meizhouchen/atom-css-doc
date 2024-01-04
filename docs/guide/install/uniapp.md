@@ -101,7 +101,7 @@ export default defineConfig({
 ## 交流群
 <div class="a-flex c-white a-jc-sa">
 <img class="a-w-200" src="/1.jpg" style="background-color:#999999">
-<img class="a-w-200" src="/2.jpg" style="background-color:#999999"> 
+<!-- <img class="a-w-200" src="/2.jpg" style="background-color:#999999"> -->
 </div>
 
 <script setup>

@@ -1,7 +1,6 @@
 export default {
   text: '自定义',
-  items: [
-    {
+  items: [{
       text: 'atomcss.config示例',
       link: '/guide/config/'
     },
@@ -23,12 +22,16 @@ export default {
           text: 'icons图标',
           link: '/guide/config/icon'
         },
-        // {
-        //   text: 'shortcuts缩写',
-        //   link: '/guide/config/shortcuts'
-        // },
         {
-          text: '前缀',
+          text: 'shortcuts缩写',
+          link: '/guide/config/shortcuts'
+        },
+        {
+          text: 'safelist',
+          link: '/guide/config/safelist'
+        },
+        {
+          text: 'prefix前缀',
           link: '/guide/config/fix'
         },
         // {
@@ -43,7 +46,7 @@ export default {
           text: 'theme主题',
           items: [{
               text: 'colors',
-              link: '/guide/config/theme/colors'
+              link: '/guide/config/theme/colors',
             },
             {
               text: 'fontSize',
@@ -57,11 +60,10 @@ export default {
               text: 'spacing',
               link: '/guide/config/theme/spacing'
             },
-        
+
           ]
         },
       ]
     }
   ]
 }
-
