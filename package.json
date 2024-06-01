@@ -9,6 +9,7 @@
   "files": [
     "dist"
   ],
+  "packageManager": "pnpm@7.18.2",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
