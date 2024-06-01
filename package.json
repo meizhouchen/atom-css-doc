@@ -15,7 +15,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@meizhou/atomcss": "link:E:/project/atom-css/packages/css-allin-class/",
+    "@meizhou/atomcss": "^0.0.34",
     "vitepress": "1.0.0-rc.15"
   },
   "dependencies": {
