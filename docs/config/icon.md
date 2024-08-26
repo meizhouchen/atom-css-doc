@@ -6,8 +6,16 @@
   // icons为数组
   icons: [
     {
-      prefix: 'aaa-', // 图标前缀 可以随意命名 避免多个字体间冲突
-      path: './相当于当前项目，去ttf文件的路径/文件名.ttf',
+      prefix: 'aaa-', // 图标前缀 可以随意命名 避免多个字体间冲突 使用-结尾
+      path: './static/font.ttf', // ./相当于当前项目，去ttf文件的路径/文件名.ttf
+    },
+    {
+      prefix: 'i-', // 可以随意命名 避免多个字体间冲突
+      path: '//at.alicdn.com/t/c/font_xxxxxxxxxxxxxxxxx.css', // 阿里巴巴图标库生成的项目css地址 可直接复制替换
+    }
+    {
+      prefix: 'i-url-', // 可以随意命名 避免多个字体间冲突
+      path: 'https://www.my.com/font.ttf', // 线上的字体文件位置
     }
   ]
 ```
