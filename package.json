@@ -16,7 +16,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@meizhou/atomcss": "^0.0.34",
+    "@meizhou/atomcss": "^0.0.36",
     "vitepress": "1.0.0-rc.15"
   },
   "dependencies": {
